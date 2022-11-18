@@ -1,0 +1,233 @@
+html {
+    background-color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: rgb(1, 1, 45);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    margin:0;
+}
+
+
+
+
+
+
+.subheader {
+    text-align: center;
+    font-weight: bolder;
+    background-size: 100%;
+    background-color: rgb(1, 1, 45);
+    width: 100%;
+    margin-bottom: 5rem;
+    padding-bottom: 0.3rem;
+    
+}
+
+ul {
+    margin-top: 1rem;
+    padding-left:0px;
+    margin-top: -0.5rem;
+}
+  
+li {
+    display: inline;
+    margin:0;
+    padding:0 12rem ;
+}
+
+.subheader a {
+    text-decoration: 0.2rem overline red;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.subheader a:hover {
+    cursor: pointer;
+    color: red;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+body {
+    margin: 0;
+}
+
+p {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+header h1:focus {
+    color:red;
+}
+
+
+
+
+
+
+table img {
+    width: 3rem;
+}
+
+table thead {
+    background-color: aqua;
+}
+
+tbody th {
+    background-color: aquamarine;
+    margin: 0.1rem;
+}
+
+table, th, td {
+    border: 1px black solid;
+    text-align: center;
+    padding: 0.5rem;
+    border-collapse: collapse;
+}
+
+table {
+    font-size: 1.5rem;
+    margin: 4rem;
+    width: 43%;
+    display: inline-table;
+    box-shadow: 2rem 1.5rem 3rem;
+}
+
+table caption {
+   margin-bottom: 2rem;
+   text-decoration: underline;
+   font-size: 1.75rem;
+}
+
+caption a {
+    color:black;
+}
+
+caption a:hover {
+    cursor:pointer;
+    color:red;
+    transition: all 0.15s;
+}
+
+div.divtablas {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+.videos {
+    text-align: center; 
+    margin-bottom: 7rem;
+}
+
+video {
+    border-radius: 1rem;
+}
+ 
+
+#video1 {
+    width: 35rem;
+    margin: 0 5rem 0 0;
+}
+
+#video2 {
+    border-radius: 1rem;
+    border:0;
+    height: 19.688rem;
+    width: 35rem;
+    margin: 0 0 0 5rem;
+
+}
+
+#video1:hover {
+    cursor: pointer;
+    box-shadow: 2rem 1rem 3rem #573827;
+    transition: all 0.3s;
+}
+
+#video2:hover {
+    cursor: pointer;
+    box-shadow: 2rem 1rem 3rem #573827;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+.audios {
+    text-align: center;
+    margin: 5rem;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #ffa876;
+}
+
+audio:hover {
+    border-radius: 5rem;
+    cursor: pointer;
+    box-shadow: 1rem 1rem 1.5rem #573827;
+    transition: all 0.3s;
+}
+
+
+
+
+
+
+footer {
+    background-color: rgb(1, 1, 45);
+    padding: 2rem;
+    color: white;
+    padding: 2rem 3rem;
+}
+
+footer a {
+    text-decoration: none;
+    color:white;
+}
+
+.section1{
+    float: left;
+    font-size: 1.5rem;
+}
+
+.section2{
+    float: right;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: yellow;
+    transition: all 0.3s;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    text-decoration: none;
+}
