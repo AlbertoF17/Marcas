@@ -1,0 +1,51 @@
+html {
+    background-color:gainsboro;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    width: 400px;
+    background-color:mediumpurple;
+    border-radius: 2.5rem;
+    padding: 0.5rem;
+    box-shadow: 0.4em 0.4em 0.3em black;
+}
+
+form p {
+    border: 1px black;
+    text-shadow: 0.2rem 0.2rem 0.6rem black;
+    color: black;
+}
+
+input, select, textarea {
+    border-radius: 0.75rem;
+    box-shadow: 0.3rem 0.2rem 0.25rem rgba(255, 255, 255, 0.35);
+}
+
+#color, #hora, #date{
+    cursor: pointer;
+}
+
+.submit {
+    border: none;
+    font-size: 1.2rem;
+    width: 150px;
+    height: 75px;
+    color: white;
+    background-color:mediumpurple;
+    box-shadow: 0.25em 0.25em 0.4em black;
+}
+
+.submit:hover{
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
