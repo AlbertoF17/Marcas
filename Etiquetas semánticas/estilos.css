@@ -242,7 +242,7 @@ aside {
     margin:10px;
 }
 
-.carta {
+.contenedor-cartas div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
