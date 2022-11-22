@@ -183,12 +183,12 @@ footer {
     text-align: center;
 }
 
-.empresas-financieras img{
+.empresas-financieras a img{
     margin: 0 1rem;
     width: 9rem;
 }
 
-.empresas-financieras img:nth-child(2){
+.empresas-financieras a:nth-child(2) img{
     width: 17rem;
 }
 
@@ -206,6 +206,7 @@ footer {
     cursor: pointer;
     transition: all 0.4s;
 }
+
 
 
 /*RESPONSIVE*/
