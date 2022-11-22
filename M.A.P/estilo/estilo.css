@@ -81,6 +81,8 @@ body{
     display: none;
 }
 
+/* INDEX */
+
 /* BANNER */
 #banner{
     padding: 0 50px;
@@ -207,7 +209,13 @@ footer {
     transition: all 0.4s;
 }
 
+/* NOTICIAS */
 
+.contenido-noticias {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
 
 /*RESPONSIVE*/
 /* 
