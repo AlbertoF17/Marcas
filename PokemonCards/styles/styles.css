@@ -4,11 +4,9 @@ body {
     margin: 0;
     background-color: #f8b78b;
     background-image: url(../img/fondoTop.svg);
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size: 40rem;
     background-position: -6rem -10rem;
-    /*background-image: url(../img/fondoTop.svg);
-    background-position: 6rem 30rem; */
 }
 
 /* USAR "HUE-ROTATE" PARA CAMBIAR EL COLOR DEL FONDO*/
