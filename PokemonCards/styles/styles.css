@@ -1,0 +1,138 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: #f8b78b;
+    background-image: url(../img/fondoTop.svg);
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: -6rem -10rem;
+    /*background-image: url(../img/fondoTop.svg);
+    background-position: 6rem 30rem; */
+}
+
+/* USAR "HUE-ROTATE" PARA CAMBIAR EL COLOR DEL FONDO*/
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background-image: url(../img/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
+}
+
+header h1 {
+    margin:0;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+    margin: 1rem 3rem;
+}
+
+.carta {
+    background-image: url(../img/fondo.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 19rem;
+    height: 15rem;
+    box-shadow: 0.2rem 0.2rem 1rem black;
+    border-radius: 5%;
+    overflow: hidden;
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
+.carta a {
+    color: black;
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.carta span {
+    color: #fcaa62;
+}
+
+.carta-especifica {
+    background-image: url(../img/fondo.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 19rem;
+    height: 35rem;
+    box-shadow: 0.2rem 0.2rem 1rem black;
+    border-radius: 5%;
+    overflow: hidden;
+    font-size: 1.5rem;
+}
+
+.carta p, .carta-especifica p {
+    margin: 0;
+}
+
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.linea {
+    height: 0.2rem;
+    width: 100%;
+    background-color: #f8b78b;
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 3px solid #f67c54;
+    background-color: #fcd3c6;
+    margin: 0;
+}
+
+.circulo img {
+    width: 100px;
+}
+
+.poderes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.poderes div {
+    text-align: center;
+}
+
+.poderes img {
+    width: 50px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-image: url(../img/fondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white
+}
+
+footer h1 {
+    margin:0;
+}
