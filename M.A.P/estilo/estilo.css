@@ -87,15 +87,16 @@ body{
 #banner{
     padding: 0 50px;
     color:black;
-    background-image: url(/img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     height: 45vh;
-    background-size: cover;
+    background-size:cover;
+    background-size: 90%;
     background-position: center;
 }
 
 #banner::before {
     content:"";
-    background: rgba(77, 77, 92, 0.6);
+    background: rgba(0, 39, 2, 0.5);
     position:absolute;
     width: 100%;
     height:45vh;
@@ -108,19 +109,19 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     overflow:hidden;
 }
 
 .contenido-banner h3{
     display: block;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 1rem 0;
+    font-size: 2rem;
     font-weight: 200;
 }
 
-.contenido-banner span {
-    font-weight: 900;
+.contenido-banner h3 p span {
+    font-weight: 90000px;
 }
 
 .contenedor-subclases {
@@ -144,8 +145,8 @@ body{
     height: 24rem;
     border-radius: 4%;
     background-color: rgba(2, 92, 62, 0.6);
-    color:black;
     padding: 1rem;
+    color:white;
 }
 
 .subpagina:hover{
@@ -169,6 +170,7 @@ body{
 
 .subpagina p {
     margin-top: -2rem;
+    font-size: 1.15rem;
 }
 
 .contenedor-conocenos {
@@ -182,7 +184,7 @@ body{
 
 h1 {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .persona {
@@ -216,7 +218,7 @@ h1 {
     transition: all 0.3s;
 }
 
-.boton-empezar {
+.boton-conocenos {
     cursor:pointer;
     font-size: 25px;
     text-decoration: none;
@@ -228,7 +230,7 @@ h1 {
     align-self: baseline;
 }
 
-.boton-empezar:hover {
+.boton-conocenos:hover {
     color: white;
     background: rgba(2, 92, 62, 0.6);
     transition: all 0.4s;
@@ -243,7 +245,7 @@ h1 {
     font-weight: bolder;
     flex-direction: row;
     text-align: center;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 4px 1px 4px white;
 }
 
 /* FOOTER */
