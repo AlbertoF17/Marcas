@@ -1,73 +1,137 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="estilo/estilo.css" type="text/css">
-        <script src="/script/script.js"></script>
-        <meta charset="utf8">
-        <meta name="description" content="página responsiva">
-        <meta name="keywords" content="HTML, etiquetas, responsive">
-        <meta name="language" content="ES">
-        <meta name="author" content="Alberto Fernández">
-        <meta name="robots" content="index, follow">
-        <meta name="revised" content="Viernes, 12 de Noviembre de 2022, 18:40 pm">
-        <meta name="viewport" content="width = device-width, initial scale=1.0">
-        <meta http-equiv="refresh" content="300; URL=nuevapagina.html">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">  
-        
-        <title>M.A.P.</title>
-    </head>
-    <body>
-        <header>
-            <div class="logo"><img class="imagen-logo" src="../M.A.P/img/logo.webp">
-            <h1 class="nombre-logo">M.A.P.</h1></div>
-            <input type="checkbox" id="check">
-            <label for="check" class="mostrar-menu">
-                &#8801
-            </label>
-            <nav class="menu">
-                <a href=#>Inicio</a>
-                <a href=#>¿Quiénes somos?</a>
-                <a>Videos</a>
-                <a>Fotos</a>
-                <a>Documentos</a>
-                </select>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
+
+<head>
+    <link rel="stylesheet" href="estilo/estilo.css" type="text/css">
+    <script src="/script/script.js"></script>
+    <meta charset="utf8">
+    <meta name="description" content="página responsiva">
+    <meta name="keywords" content="HTML, etiquetas, responsive">
+    <meta name="language" content="ES">
+    <meta name="author" content="Alberto Fernández">
+    <meta name="robots" content="index, follow">
+    <meta name="revised" content="Viernes, 12 de Noviembre de 2022, 18:40 pm">
+    <meta name="viewport" content="width = device-width, initial scale=1.0">
+    <meta http-equiv="refresh" content="300; URL=nuevapagina.html">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <title>M.A.P.</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img class="imagen-logo" src="../M.A.P/img/logo.webp">
+            <h1 class="nombre-logo">M.A.P.</h1>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+            <a href=#>Inicio</a>
+            <a href=#>¿Quiénes somos?</a>
+            <a>Videos</a>
+            <a>Fotos</a>
+            <a>Documentos</a>
+            </select>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
                 </div>
-                <a href=#>Contacto</a>
-                <label for="check" class="esconder-menu">
-                    &#215
-                </label>
-            </nav>
-        </header>
-        <section id="banner">
-            <div class="contenido-banner">
-                <p><h3><span>M.A.P. </span>Mental Aid</p>
-                <p>Project</h3></p>
-                <h1 class="lema">"Conectados por un futuro de calidad"</h1>
-                <a href="#" class="boton-empezar">Conócenos</a>
-                
             </div>
-        </section>
-        <footer>
-            <div class="empresas-financieras">
-                <p>Empresas Colaboradoras:</p>
-                <a href="https://fundacionlacaixa.org/es/fondo-social-europeo" target="_blank"><img src="../M.A.P/img/caixa.png"></a>
-                <a href="https://unicef.es" target="_blank"><img src="../M.A.P/img/unicef.png"></a>
-                <a href="https://msf.es" target="_blank"><img src="../M.A.P/img/medicos-sin-fronteras.png"></a>
+            <a href=#>Contacto</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <section id="banner">
+        <div class="contenido-banner">
+            <p>
+            <h3><span>M.A.P. </span>Mental Aid</p>
+                <p>Project
+            </h3>
+            </p>
+            <h1 class="lema">"Conectados por un futuro de calidad"</h1>
+            <a href="#" class="boton-empezar">Conócenos</a>
+
+        </div>
+    </section>
+    <section class="contenedor-subclases">
+        <a href="../M.A.P/subpages/noticias.html">
+            <div class="subpagina">
+                <img src="../M.A.P/img/ejemplo.jpg">
+                <h2>Noticias</h2>
+                <p>Aquí podrás encontrar las noticias más relevantes del momento</p>
             </div>
-            <div class="Copyright">
-                <p>§</p>
-                <p>© 2022<a href="#">M.A.P.</a></p>
+        </a>
+        <a href="#">
+            <div class="subpagina">
+                <img src="../M.A.P/img/ejemplo.jpg">
+                <h2>Servicios</h2>
+                <p>Charlas y discursos de profesionales</p><p>Información de calidad de primera mano</p>
+                </p>
             </div>
-            <div class="contacto-footer">
-                <a href="https://www.tiktok.com/@user4066533137759" target="_blank"><img src="../M.A.P/img/tiktok.png"></a>
-                <a href="https://instagram.com/mental_aid_proyect_m.a.p" target="_blank"><img src="../M.A.P/img/Instagram.png"></a>
+        </a>
+        <a href="#">
+            <div class="subpagina">
+                <img src="../M.A.P/img/ejemplo.jpg">
+                <h2>Testimonios</h2>
+                <p>Un punto de vista más cercano</p><p>Testimonios de influencers, personas con experiencia...</p>
             </div>
-        </footer>
-    </body>
+        </a>
+    </section>
+    <h1>Conócenos</h1>
+    <section class="contenedor-conocenos">
+        <div class="persona">
+            <div class="circulo">
+                <img>
+            </div>
+            <h2>Rafa</h2>
+            <p>el lincenciado</p>
+        </div>
+        <div class="persona">
+            <div class="circulo">
+                <img>
+            </div>
+            <h2>Alicia</h2>
+            <p>simplemente alicia</p>
+        </div>
+        <div class="persona">
+            <div class="circulo">
+                <img>
+            </div>
+            <h2>Javi</h2>
+            <p>boostrap enjoyer</p>
+        </div>
+        <div class="persona">
+            <div class="circulo">
+                <img>
+            </div>
+            <h2>Alberto</h2>
+            <p>el hacker</p>
+        </div>
+    </section>
+    <footer>
+        <div class="empresas-financieras">
+            <p>Empresas Colaboradoras:</p>
+            <a href="https://fundacionlacaixa.org/es/fondo-social-europeo" target="_blank"><img
+                    src="../M.A.P/img/caixa.png"></a>
+            <a href="https://unicef.es" target="_blank"><img src="../M.A.P/img/unicef.png"></a>
+            <a href="https://msf.es" target="_blank"><img src="../M.A.P/img/medicos-sin-fronteras.png"></a>
+        </div>
+        <div class="Copyright">
+            <p>§</p>
+            <p>© 2022<a href="#">M.A.P.</a></p>
+        </div>
+        <div class="contacto-footer">
+            <a href="https://www.tiktok.com/@user4066533137759" target="_blank"><img src="../M.A.P/img/tiktok.png"></a>
+            <a href="https://instagram.com/mental_aid_proyect_m.a.p" target="_blank"><img
+                    src="../M.A.P/img/Instagram.png"></a>
+        </div>
+    </footer>
+</body>
+
 </html>
