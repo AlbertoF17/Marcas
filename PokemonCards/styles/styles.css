@@ -5,7 +5,7 @@ body {
     background-color: #f8b78b;
     background-image: url(../img/fondoTop.svg);
     background-repeat:no-repeat;
-    background-size: 40rem;
+    background-size: 45rem;
     background-position: -6rem -10rem;
 }
 
@@ -20,15 +20,44 @@ header {
     color: white
 }
 
+.fantasma{
+    background-color: #9900b2;
+    filter: hue-rotate(270deg);
+}
+
+.agua{
+    background-color: #83eeff;
+    filter: hue-rotate(220deg);
+}
+
+.planta{
+    background-color: #66cdaa;
+    filter: hue-rotate(120deg);
+}
+
+.fantasma img{
+    filter: hue-rotate(-270deg);
+}
+
+.agua img{
+    filter: hue-rotate(-220deg);
+}
+
+.planta img{
+    filter: hue-rotate(-120deg);
+}
+
 header h1 {
     margin:0;
 }
 
 section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:20px;
-    margin: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 1rem 20rem;
 }
 
 .carta {
@@ -36,7 +65,8 @@ section {
     background-color: white;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     width: 19rem;
@@ -45,14 +75,16 @@ section {
     border-radius: 5%;
     overflow: hidden;
     font-size: 1.5rem;
-    justify-self: center;
 }
 
-.carta a {
+.carta img {
+    justify-self: center;
+    align-self: center;
+}
+
+section a {
     color: black;
     text-decoration: none;
-    display: grid;
-    grid-template-rows: 2fr 1fr;
 }
 
 .carta span {
