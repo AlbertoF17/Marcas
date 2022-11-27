@@ -17,7 +17,7 @@ body {
 /*HEADER 1*/
 
 header {    
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     background-color: rgb(2, 92, 62);
     color:white;
@@ -27,11 +27,18 @@ header {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 header h1 {
-    font-size: 70px;
+    font-size: 4rem;
     text-decoration: none;
     padding: 1rem, 0;
-    display: inline-block;
+    font-weight: bold;
 }
 
 body{
@@ -44,41 +51,12 @@ body{
     width: 3rem;
 }
 
-.menu {
-    font-size: 30px;
-    justify-content: space-between;
+.nombre-logo {
+    margin:0;
 }
 
-.menu a{
-    color:white;
-    text-decoration: none;
-    padding: 0 1rem;
-}
-
-.menu a:hover {
-    cursor:pointer;
-    color: red;
-    text-decoration: underline;
-    transition: all 0.3s;
-}
-
-.mostrar-menu, .esconder-menu{
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.mostrar-menu {
-    order:1;
-}
-
-.menu a:hover, .mostrar-menu:hover, .esconder-menu:hover {
-    color:red;
-}
-
-#check {
-    display: none;
+.nav-link {
+    font-size: 3rem;
 }
 
 /* INDEX */
@@ -315,26 +293,29 @@ footer {
     
 }
 
-#contenido-noticias article {
+#contenido-noticias article a{
     display: flex;
     gap: 2rem;
-}
-
-#contenido-noticias article {
     background-color: rgba(2, 92, 62, 0.6);
     padding: 1rem;
     border-radius: 1rem;
 }
 
-#contenido-noticias article div img {
+#contenido-noticias article a:hover {
+    box-shadow: 1rem 1rem 2rem black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#contenido-noticias article div a img {
     border-radius: 1rem;
 }
 
-#contenido-noticias article div h2 {
+#contenido-noticias article a div h2 {
     font-size: 4rem;
 }
 
-#contenido-noticias article div p {
+#contenido-noticias article a div p {
     font-size: 2rem;
 }
 
