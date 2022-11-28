@@ -15,7 +15,7 @@ body {
 }
 
 
-/*HEADER 1*/
+/*HEADER*/
 
 header {
     padding: 1rem;
@@ -59,8 +59,8 @@ body{
     margin:0;
 }
 
-.navbar div ul li{
-    margin-right: 1rem;
+.navbar-nav {
+   gap: 1.5rem;
 }
 
 .nav-link {
