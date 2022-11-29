@@ -331,15 +331,15 @@ footer {
     text-align: end;
 }
 
-.izquierda {
+.izquierda a {
     flex-direction: row;
     align-items: flex-start;
     margin-right: 40%;
 }
 
-.derecha {
+.derecha a {
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: flex-start;
     margin-left: 40%;
 }
 
