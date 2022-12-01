@@ -13,7 +13,7 @@ body {
 
 header {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     background-image: url(../img/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,9 +86,33 @@ section a {
     color: black;
     text-decoration: none;
 }
+/*INVERTIR EL HUE ROTATE PARA LAS PAGINAS ESPECIFICAS*/
+.color-fuego {
+    color: #c24903;
+}
 
-.carta span {
-    color: #fcaa62;
+.color-planta{
+    color: #008a5c;
+}
+
+.color-fantasma {
+    color: #6c007c;
+}
+
+.color-agua {
+    color: #00abc5
+}
+
+.body-index {
+    height: 80.3vh;
+}
+
+.body-especifica {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 82vh;
 }
 
 .carta-especifica {
@@ -96,18 +120,20 @@ section a {
     background-color: white;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 19rem;
-    height: 35rem;
-    box-shadow: 0.2rem 0.2rem 1rem black;
+    width: 20rem;
+    height: 30rem;
     border-radius: 5%;
     overflow: hidden;
     font-size: 1.5rem;
+    margin: 2rem 0;
 }
 
 .carta p, .carta-especifica p {
     margin: 0;
+    display: block;
 }
 
 h6 {
@@ -138,11 +164,11 @@ h6 {
 }
 
 .poderes{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 1rem;
+    width: 100%;
 }
 
 .poderes div {
@@ -156,7 +182,7 @@ h6 {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 1.48rem;
     background-image: url(../img/fondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
