@@ -1,0 +1,3 @@
+.body-especifica section p span{
+    filter: hue-rotate(-220deg);
+}
