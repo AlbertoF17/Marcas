@@ -1,0 +1,13 @@
+.services, .portfolio, .home, .contact, .blog, .about, .aboutme {
+    width: 80vw;
+    height: 100vh;
+    margin-left: 20vw;
+    background-color: #170000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border: 1px solid #c00000;
+
+}
