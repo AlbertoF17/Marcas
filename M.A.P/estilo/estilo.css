@@ -228,7 +228,6 @@ h1 {
 .circulo {
     height: 14rem;
     width: 14rem;
-    background-color: aqua;
     border-radius: 50%;
 }
 
@@ -532,6 +531,7 @@ footer {
 
 #psicólogos img:hover {
     box-shadow: 0.5rem 0.5rem 3rem black;
+    transition: all 0.3s;
 }
 
 .psicologo p {
