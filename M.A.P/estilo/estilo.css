@@ -333,10 +333,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    
+}
+
+#contenido-noticias article a div:nth-child(1){
+    display: flex;
+    align-self: center;
 }
 
 #contenido-noticias article a{
+    color:white;
+    text-decoration: none;
     display: flex;
     gap: 2rem;
     background-color: rgba(2, 92, 62, 0.6);
@@ -355,11 +361,11 @@ footer {
 }
 
 #contenido-noticias article a div h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 #contenido-noticias article a div p {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 .texto {
@@ -484,23 +490,16 @@ form p {
     height: 70vh;
     border-radius: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(2, 92, 62, 0.6);
+    display: flex;
+    padding: 1rem;
 }
 
 .input h1 {
     margin: 0;
-}
-
-.input {
-    background-color: rgba(2, 92, 62, 0.6);
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem;
-    height: 75vh;
 }
 
 form{
@@ -539,11 +538,12 @@ button:hover {
     height: 50vh;
 }
 
-.redes a{
+.redes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .contenido-servicios {
@@ -551,8 +551,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    gap: 5rem;
+    gap: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    margin: 2rem 0;
 }
 
 #introducción {
@@ -579,10 +581,8 @@ button:hover {
     width: 80vw;
 }
 
-.contenido-servicios h2 {
-    text-align: center;
-    font-size: 3rem;
-    margin: 0;
+#psicologo, #psiquiatra {
+    height: 12vh;
 }
 
 #psicólogos {
@@ -618,7 +618,7 @@ button:hover {
     width: 80vw;
 }
 
-.psiquiatra {
+#psiquiatra {
     display: flex;
     flex-direction: column;
     align-content: center;
