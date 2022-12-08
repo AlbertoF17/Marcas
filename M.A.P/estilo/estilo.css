@@ -546,6 +546,96 @@ button:hover {
     align-items: center;
 }
 
+.contenido-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    gap: 5rem;
+}
+
+#introducción {
+    background-color: rgba(2, 92, 62, 0.6);
+    padding: 2rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80vw;
+}
+
+#introducción p {
+    font-size: 1.25rem;
+}
+
+.contenedor-psicologos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(2, 92, 62, 0.6);
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    width: 80vw;
+}
+
+.contenido-servicios h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#psicólogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+#psicólogos img {
+    justify-self: center;
+    width: 15rem;
+    border-radius: 3rem;
+}
+
+#psicólogos img:hover {
+    box-shadow: 0.5rem 0.5rem 3rem black;
+}
+
+.psicologo p{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.contenedor-psiquiatras {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(2, 92, 62, 0.6);
+    padding: 2rem 4rem;
+    border-radius: 3rem;
+    width: 80vw;
+}
+
+.psiquiatra {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.psiquiatra img {
+    width: 20rem;
+    align-self: center;
+    border-radius: 3rem;
+}
+
+.psiquiatra p {
+    font-size: 1.25rem;
+}
+
 /*RESPONSIVE*/
 /* 
 @media(max-width: 1098px){*/
