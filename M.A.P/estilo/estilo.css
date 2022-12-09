@@ -365,6 +365,7 @@ h1 {
     transition: all 0.3s ease;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 .aviso-cookies .boton:hover {
