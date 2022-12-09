@@ -744,12 +744,17 @@ form textarea {
     max-height: 15rem;
 }
 
-button {
+input, textarea {
+    padding: 0 0.3rem;
+}
+
+.button {
+    border: 0.15rem solid black;
     width: 6rem;
     height: 3rem;
 }
 
-button:hover {
+.button:hover {
     color: white;
     background-color: black;
     transition: all 0.3s;
