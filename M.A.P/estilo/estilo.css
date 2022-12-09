@@ -115,10 +115,6 @@ body {
     gap: 5rem;
 }
 
-.tablas table caption {
-
-}
-
 .tablas table th, td{
     font-size: 1.5rem;
 }
