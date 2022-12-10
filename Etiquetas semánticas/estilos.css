@@ -64,7 +64,7 @@ nav a:hover {
     
 }
 
-article {
+.articles>div {
     max-height: 500px;
     overflow: auto;
     padding: 1.5rem;
@@ -204,6 +204,10 @@ aside {
     background-color: white;
     color: black;
     transition: all 0.3s;
+}
+
+h3 {
+    font-size: rem;
 }
 
 /*GALLERY*/
