@@ -40,13 +40,15 @@ header {
 }
 
 .electrico{
-    background-color: #a79602;
+    background-color: #b9a808;
     filter: hue-rotate(50deg);
 }
 
-.siniestro{
+.siniestro {
     background-color: #4e4e4e;
-    filter: saturate(0);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .fantasma img{
@@ -62,11 +64,13 @@ header {
 }
 
 .electrico img{
-    filter: hue-rotate(-70deg);
+    filter: hue-rotate(-50deg);
 }
 
-.siniestro img{
-    filter: saturate(-100);
+.foto {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 
 header h1 {
