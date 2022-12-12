@@ -39,11 +39,6 @@ header {
     filter: hue-rotate(120deg);
 }
 
-.bicho{
-    background-color: #00b185;
-    filter: hue-rotate(80deg);
-}
-
 .electrico{
     background-color: #a79602;
     filter: hue-rotate(50deg);
@@ -66,12 +61,8 @@ header {
     filter: hue-rotate(-120deg);
 }
 
-.bicho img{
-    filter: hue-rotate(-80deg);
-}
-
 .electrico img{
-    filter: hue-rotate(-50deg);
+    filter: hue-rotate(-70deg);
 }
 
 .siniestro img{
