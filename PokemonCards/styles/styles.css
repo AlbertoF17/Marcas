@@ -25,7 +25,7 @@ header {
 }
 
 .fantasma{
-    background-color: #9900b2;
+    background-color: #470052;
     filter: hue-rotate(270deg);
 }
 
@@ -44,11 +44,9 @@ header {
     filter: hue-rotate(50deg);
 }
 
-.siniestro {
-    background-color: #4e4e4e;
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
+.psiquico {
+    background-color: #750c46;
+    filter: hue-rotate(-30deg);
 }
 
 .fantasma img{
@@ -67,10 +65,8 @@ header {
     filter: hue-rotate(-50deg);
 }
 
-.foto {
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
+.psicquico img {
+    filter: hue-rotate(30deg);
 }
 
 header h1 {
@@ -137,8 +133,8 @@ section a {
     color: #00b185;
 }
 
-.color-siniestro{
-    color: #4e4e4e;
+.color-psiquico{
+    color: #d415a5;
 }
 
 .body-index {
@@ -163,7 +159,7 @@ section a {
     flex-wrap: wrap;
     width: 20rem;
     height: 30rem;
-    border-radius: 5%;
+    border-radius: 2rem;
     overflow: hidden;
     font-size: 1.5rem;
     margin: 2rem 0;
