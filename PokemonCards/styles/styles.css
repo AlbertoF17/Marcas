@@ -46,7 +46,7 @@ header {
 
 .psiquico {
     background-color: #750c46;
-    filter: hue-rotate(-30deg);
+    filter: hue-rotate(-50deg);
 }
 
 .fantasma img{
@@ -66,7 +66,7 @@ header {
 }
 
 .psicquico img {
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(50deg);
 }
 
 header h1 {

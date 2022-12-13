@@ -1,3 +1,7 @@
 .body-especifica section p span{
-    filter: hue-rotate(30deg);
+    filter: hue-rotate(50deg);
+}
+
+.psiquico p span{
+    filter: hue-rotate(50deg);
 }

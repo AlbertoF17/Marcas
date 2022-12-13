@@ -1,3 +1,7 @@
 .body-especifica section p span{
     filter: hue-rotate(-120deg);
 }
+
+.planta p span {
+    filter: hue-rotate(-120deg);
+}
