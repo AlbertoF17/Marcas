@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.separador {
+    height: 0.2rem;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.separador2 {
+    height: 0.2rem;
+    width: 100vw;
+    background-color: lightgray;
+    margin: 5rem 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+header span {
+    color: blue;
+}
+
+header nav ul {
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen {
+    width: 100vw;
+    height: 60vh;
+    margin: 1rem 0;
+    background-image: url(../img/decoracion.jpg);
+    background-size: cover;
+}
+
+.imagen img {
+    width: 90vw;
+}
+
+.categorias h2,
+.nuestros-productos h2 {
+    text-align: center;
+}
+
+.categorias div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.categorias div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categorias div img {
+    width: 20vw;
+}
+
+.sobre-nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sobre-nosotros div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    background-color: rgb(1, 105, 165);
+    color: white;
+    height: 65vh;
+    width: 50vw;
+}
+
+.sobre-nosotros img {
+    width: 50vw;
+}
+
+.nuestros-productos {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nuestros-productos h3 {
+    font-size: 1.5rem;
+}
+
+.prod1, .prod23 div, .prod456 div {
+    background-color: rgb(1, 105, 165);
+    color: white;
+}
+
+.prod1 {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 1rem;
+}
+
+.prod1 img {
+    width: 40vw;
+}
+
+.prod1 div {
+    width: 50vw;
+    display: flex;
+    padding-left: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod23 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.prod23 img {
+    width: 30vw;
+}
+
+.prod23 div {
+    display: flex;
+    flex-direction: column;
+    width: 39.45vw;
+    justify-content: center;
+    align-items:center;
+    padding: 1rem;
+}
+
+.prod456 {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.prod456 img {
+    width: 20vw;
+}
+
+.prod456 div {
+    display: flex;
+    flex-direction: column;
+    width: 26.03vw;
+    justify-content: center;
+    align-items:center;
+    padding: 1rem;
+}
+
+button {
+    color: white;
+    padding: 1rem 3rem;
+    font-weight: bold;
+    background-color: rgb(94, 156, 0);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(78, 129, 0);
+    transition: all 0.3s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer div div{
+    flex-direction: column;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0.6rem 0;
+}
