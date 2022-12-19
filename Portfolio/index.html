@@ -11,35 +11,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="300; URL=index.html">
-    <link type="text/css" rel="stylesheet" href="../AlbertoFernandezGomez_Examen1/css/estilos.css">
+    <link type="text/css" rel="stylesheet" href="css/estilos.css">
     <title>Alberto's Portfolio</title>
 </head>
 
 <body>
     <section class="menu">
         <nav>
-            <section class="logo"><a href="#"><img src="../AlbertoFernandezGomez_Examen1/img/logo.png"></a></section>
+            <section class="logo"><a href="#"><img src="img/logo.png"></a></section>
             <section class="lista">
                 <ul>
-                    <a href="../AlbertoFernandezGomez_Examen1/home/home.html">
+                    <a href="home/home.html">
                         <li>Home</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/blog/blog.html">
+                    <a href="blog/blog.html">
                         <li>Blog</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/portfolio/portfolio.html">
+                    <a href="portfolio/portfolio.html">
                         <li>Portfolio</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/services/services.html">
+                    <a href="services/services.html">
                         <li>Services</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/about/about.html">
+                    <a href="about/about.html">
                         <li>About</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/aboutMe/aboutMe.html">
+                    <a href="aboutMe/aboutMe.html">
                         <li>About me</li>
                     </a>
-                    <a href="../AlbertoFernandezGomez_Examen1/contact/contact.html">
+                    <a href="contact/contact.html">
                         <li>Contact</li>
                     </a>
                 </ul>
@@ -267,33 +267,48 @@
             <form>
                 <fieldset>
                     <legend>Contact me</legend>
-                    <div class="partes">
-                        <div class="parte" id="parte1">
-                            <label for="Nombre">Nombre:</label>
-                            <input type="text" placeholder="Nombre">
+                    <div class="formulario">
+                        <div>
+                            <div>
+                                <p><label for="Nombre">Nombre:</label>
+                                    <input class="entrada" type="text" placeholder="Nombre">
+                                </p>
 
-                            <label for="Correo">Correo electrónico:</label>
-                            <input type="email">
+                                <p><label for="Correo">Correo electrónico:</label>
+                                    <input class="entrada" type="email">
+                                </p>
 
-                            <label for="Asunto">Selecciona asunto:</label>
-                            <select></select>
+                                <p><label for="Asunto">Selecciona asunto:</label>
+                                    <select class="entrada">
+                                        <optgroup label="Laboral">
+                                            <option selected>Solicitar entrvista</option>
+                                            <option>Oferta laboral</option>
+                                        </optgroup>
+                                        <optgroup label="Servicios oferados">
+                                            <option>Desarrollo de una página web</option>
+                                            <option>Desarrollo de la capa servidor</option>
+                                        </optgroup>
+                                    </select>
+                                </p>
 
-                            ¿Cómo me has conocido?
-                            <input type="checkbox">
-                            <label for="checkbox">Redes Sociales</label>
-                            <label for="checkbox">Anuncios</label>
+                                <p><label type="checkbox">¿Cómo me has conocido?</p></label>
+                                <label for="checkbox"><input class="check" type="checkbox">Redes Sociales</label>
+                                <label for="checkbox"><input class="check" type="checkbox">Anuncios</label>
 
-                            ¿Qué le ha parecido mi web?
-                            <input type="radiobox">
-                            <label for="radiobox">Pobre</label>
-                            <label for="radiobox">Normal</label>
-                            <label for="radiobox">Excelente</label>
+
+                                <p>¿Qué le ha parecido mi web?</p>
+                                <label for="radio"><input name="option" class="check" type="radio">Pobre</label>
+                                <label for="radio"><input name="option" class="check" type="radio">Normal</label>
+                                <label for="radio"><input name="option" class="check" type="radio">Buena</label>
+                                <label for="radio"><input name="option" class="check" type="radio">Muy buena</label>
+                                <label for="radio"><input name="option" class="check" type="radio">Excelente</label>
+                            </div>
+                            <div>
+                                <p><label for="mensaje">Cuerpo del mensaje:</label></p>
+                                <textarea></textarea>
+                            </div>
                         </div>
-                        <div class="parte" id="parte2">
-                            <label for="mensaje">Cuerpo del mensaje:</label>
-                            <textarea></textarea>
-                        </div>
-                        <div class="parte" id="parte3">
+                        <div>
                             <button type="reset">Resetear</button>
                             <button type=submit>Enviar</button>
                         </div>
