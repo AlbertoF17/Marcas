@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="../estilos/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="description" content="tienda muebles">
+    <meta name="keywords" content="HTML, etiquetas, marcas, muebles, tienda, contacto">
+    <meta name="language" content="ES">
+    <meta name="author" content="Alberto Fernández">
+    <meta name="robots" content="index, follow">
+    <meta name="revised" content="Viernes, 28 de Octubre de 2022, 18:40 pm">
+    <meta http-equiv="refresh" content="300; URL=contacto.html">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Muebles</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tienda <span>Muebles</span></h1>
+        <div class="separador"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../subpages/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="../subpages/tienda.html">Tienda</a>
+                </li>
+                <li>
+                    <a href="../subpages/blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="../subpages/galeria.html">Galería</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <fieldset class="datos">
+                <legend>Tus Datos</legend>
+                <p><label for="Nombre">Nombre:</label>
+                    <input type="text" placeholder="Tu Nombre">
+                </p>
+                <p><label for="Asunto">Asunto:</label>
+                    <input type="text" placeholder="Tu Aunto">
+                </p>
+                <p><label for="email">E-mail:</label>
+                    <input type="email" placeholder="Tu Email">
+                </p>
+                <p><label for="telefono">Teléfono:</label>
+                    <input type="tel" placeholder="Tu Teléfono">
+                </p>
+                <p><label for="mensaje">Mensaje:</label>
+                    <textarea></textarea>
+                </p>
+            </fieldset>
+            <fieldset class="pais">
+                <legend>País</legend>
+                <p><label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">--Seleccione--</option>
+                        <option value="México">México</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="España">España</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset class="infoextra">
+                <legend>Información extra</legend>
+                <p><label for="Cliente">Cliente</label><input type="radio" name="info" value="Cliente">
+                </p>
+                <p><label for="Proveedor">Proveedor</label><input type="radio" name="info" value="Proveedor">
+                </p>
+                <p><label for="info-extra">Categoría de Interés</label>
+                    <select id="interes" name="interes">
+                        <option value="">--Seleccione--</option>
+                        <option value="Cocina">Cocina</option>
+                        <option value="Exterior">Exterior</option>
+                        <option value="Recámaras">Recámaras</option>
+                        <option value="Oficina">Oficina</option>
+                        <option value="Television">Televisión</option>
+                    </select>
+                </p>
+            </fieldset>
+        </form>
+        <button type="submit">ENVIAR FORMULARIO</button>
+    </section>
+    <div class="separador2"></div>
+    <footer>
+        <div>
+            <div>
+                <h2><a>Categorías</a></h2>
+                <p><a>Cocina</a></p>
+                <p><a>Oficina</a></p>
+                <p><a>Jardín</a></p>
+                <p><a>Cochera</a></p>
+                <p><a>Dormitorios</a></p>
+            </div>
+            <div>
+                <h2><a></a>Sobre Nosotros</h2>
+                <p><a></a>Nuestra Historia</p>
+                <p><a></a>Misión, Visión y Valores</p>
+                <p><a></a>Carreras</p>
+                <p><a></a>Política de Privacidad</p>
+                <p><a></a>Términos del Servicio</p>
+            </div>
+            <div>
+                <h2><a>Soporte</a></h2>
+                <p><a>Preguntas Frecuentes</a></p>
+                <p><a>Ayuda en línea</a></p>
+                <p><a>Confianza y Seguridad</a></p>
+            </div>
+        </div>
+        <div>
+            <p>Todos los derechos reservados. TiendaMuebles</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
