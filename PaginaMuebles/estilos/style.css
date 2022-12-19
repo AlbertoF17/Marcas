@@ -361,8 +361,12 @@ button:hover {
     font-weight: bold;
 }
 
-.contacto button {
-    margin: 1rem;
+.contacto form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    padding: 1rem;
 }
 
 .datos input{
