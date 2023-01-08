@@ -231,26 +231,40 @@ legend {
 
 .formulario {
     display: flex;
+    flex-direction: column;
     width: 70vw;
 }
 
-.formulario div{
+.formulario>div{
     display: flex;
-    flex-direction: column;
-    gap: 1em;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .formulario p {
     margin: 0;
+    margin-bottom: 2rem;
 }
 
 .formulario div{
     padding: 1em;
 }
 
+.botones{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
 form button {
-    width: 10vw;
-    height: 6vh;
+    width: 12vw;
+    height: 7vh;
+    text-align: center;
 }
 
 form textarea{
@@ -265,6 +279,10 @@ form textarea{
 
 textarea{
     font-size: 1.5em;
+    max-width: 33vw;
+    min-width: 30vw;
+    min-height: 120vh;
+    /*max-height: 40vh;*/
 }
 
 .check {
