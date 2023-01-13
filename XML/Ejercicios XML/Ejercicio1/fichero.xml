@@ -56,3 +56,21 @@
         </fechaHecho>
     </hecho>
 </hechos_historicos>
+
+<!-- EJERCICIO 4 -->
+<mensaje>
+    <remite>
+        <nombre></nombre>
+        <email></email>
+    </remite>
+    <destinatario>
+        <nombre></nombre>
+        <email></email>
+    </destinatario>
+    <asunto></asunto>
+    <texto>
+        <parrafo></parrafo>
+    </texto>
+</mensaje>
+
+<!-- EJERCICIO 5 -->
