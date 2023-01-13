@@ -11,7 +11,7 @@
         <fecha_nacimiento>
             <dia>12</dia>
             <mes>2</mes>
-            <año>2001</año>
+            <anyo>2001</anyo>
         </fecha_nacimiento>
         <ciudad>Madrid</ciudad>
     </persona>
@@ -21,7 +21,7 @@
         <fecha_nacimiento>
             <dia>24</dia>
             <mes>2</mes>
-            <año>2001</año>
+            <anyo>2001</anyo>
         </fecha_nacimiento>
         <ciudad>Sevilla</ciudad>
     </persona>
@@ -31,7 +31,7 @@
         <fecha_nacimiento>
             <dia>8</dia>
             <mes>2</mes>
-            <año>2009</año>
+            <anyo>2009</anyo>
         </fecha_nacimiento>
         <ciudad>Sevilla</ciudad>
     </persona>

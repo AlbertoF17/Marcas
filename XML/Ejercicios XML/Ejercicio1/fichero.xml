@@ -24,7 +24,7 @@
         <fechaEntrega>
             <dia>19</dia>
             <mes>5</mes>
-            <año>2000</año>
+            <anyo>2000</anyo>
         </fechaEntrega>
     </pedido>
 </pedidos>
@@ -36,7 +36,7 @@
         <fechaHecho>
             <dia>12</dia>
             <mes>8</mes>
-            <año>1981</año>
+            <anyo>1981</anyo>
         </fechaHecho>
     </hecho>
     <hecho>
@@ -44,7 +44,7 @@
         <fechaHecho>
             <dia>4</dia>
             <mes>9</mes>
-            <año>1998</año>
+            <anyo>1998</anyo>
         </fechaHecho>
     </hecho>
     <hecho>
@@ -52,7 +52,7 @@
         <fechaHecho>
             <dia>4</dia>
             <mes>2</mes>
-            <año>2004</año>
+            <anyo>2004</anyo>
         </fechaHecho>
     </hecho>
 </hechos_historicos>
