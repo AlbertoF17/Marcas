@@ -1,0 +1,32 @@
+<personas>
+    <persona>
+        <nombre>Elena</nombre>
+        <sexo>Mujer</sexo>
+        <fecha_nacimiento>
+            <dia>12</dia>
+            <mes>2</mes>
+            <año>2001</año>
+        </fecha_nacimiento>
+        <ciudad>Madrid</ciudad>
+    </persona>
+    <persona>
+        <nombre>Juan</nombre>
+        <sexo>Hombre</sexo>
+        <fecha_nacimiento>
+            <dia>24</dia>
+            <mes>2</mes>
+            <año>2001</año>
+        </fecha_nacimiento>
+        <ciudad>Sevilla</ciudad>
+    </persona>
+    <persona>
+        <nombre>Manuel</nombre>
+        <sexo>Hombre</sexo>
+        <fecha_nacimiento>
+            <dia>8</dia>
+            <mes>2</mes>
+            <año>2009</año>
+        </fecha_nacimiento>
+        <ciudad>Sevilla</ciudad>
+    </persona>
+</personas>
