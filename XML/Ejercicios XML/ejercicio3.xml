@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- EJERCICIO 3 -->
+<hechos_historicos>
+    <hecho>
+        <descripcion>IBM da a conocer el PC</descripcion>
+        <fechaHecho>
+            <dia>12</dia>
+            <mes>8</mes>
+            <anyo>1981</anyo>
+        </fechaHecho>
+    </hecho>
+    <hecho>
+        <descripcion>Se funda Google</descripcion>
+        <fechaHecho>
+            <dia>4</dia>
+            <mes>9</mes>
+            <anyo>1998</anyo>
+        </fechaHecho>
+    </hecho>
+    <hecho>
+        <descripcion>Se funda Facebook</descripcion>
+        <fechaHecho>
+            <dia>4</dia>
+            <mes>2</mes>
+            <anyo>2004</anyo>
+        </fechaHecho>
+    </hecho>
+</hechos_historicos>
