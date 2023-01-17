@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilos.css"?>
+
+<!-- EJERCICIO 5 -->
+<animales>
+    <animal>
+        <nombre>Perro</nombre>
+        <numPatas>4</numPatas>
+    </animal>
+    <animal>
+        <nombre>Pato</nombre>
+        <numPatas>2</numPatas>
+    </animal>
+    <animal>
+        <nombre>Ballena</nombre>
+        <numPatas>0</numPatas>
+    </animal>
+</animales>
