@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Alberto's Portfolio">
+    <meta name="keywords" content="HTML, etiquetas, css, estilos, lenguajes, programación, marcas">
+    <meta name="language" content="ES">
+    <meta name="author" content="albertofergom17@gmail.com">
+    <meta name="robots" content="index, follow">
+    <meta name="revised" content="Viernes, 2 de Diciembre de 2022, 18:30 pm">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300; URL=index.html">
+    <link type="text/css" rel="stylesheet" href="../css/estilos.css">
+    <link type="text/css" rel="stylesheet" href="../css/estilopaginaespecfica.css">
+    <title>Alberto's Portfolio</title>
+</head>
+
+<body>
+    <section class="menu">
+        <nav>
+            <section class="logo"><a href="../index.html"><img src="../img/logo.png"></a></section>
+            <section class="lista">
+                <ul>
+                    <a href="portfolio/portfolio.html">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="services/services.html">
+                        <li>Services</li>
+                    </a>
+                    <a href="aboutMe/aboutMe.html">
+                        <li>About me</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </section>
+
+        </nav>
+        <footer>&copy; 2022-23 Alberto Fernández Gómez</footer>
+    </section>
+    <section class="contact">
+        <form>
+            <fieldset>
+                <legend>Contact me</legend>
+                <div class="formulario">
+                    <div>
+                        <div>
+                            <p><label for="Nombre">Nombre:</label>
+                                <input class="entrada" type="text" placeholder="Nombre">
+                            </p>
+
+                            <p><label for="Correo">Correo electrónico:</label>
+                                <input class="entrada" type="email">
+                            </p>
+
+                            <p><label for="Asunto">Selecciona asunto:</label>
+                                <select class="entrada">
+                                    <optgroup label="Laboral">
+                                        <option selected>Solicitar entrvista</option>
+                                        <option>Oferta laboral</option>
+                                    </optgroup>
+                                    <optgroup label="Servicios oferados">
+                                        <option>Desarrollo de una página web</option>
+                                        <option>Desarrollo de la capa servidor</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+
+                            <p><label type="checkbox">¿Cómo me has conocido?</label></p>
+                            <label for="checkbox"><input class="check" type="checkbox">Redes Sociales</label>
+                            <label for="checkbox"><input class="check" type="checkbox">Anuncios</label>
+
+
+                            <p><label type="radio">¿Qué le ha parecido mi web?</label></p>
+                            <label for="radio"><input name="option" class="check" type="radio">Pobre</label>
+                            <label for="radio"><input name="option" class="check" type="radio">Normal</label>
+                            <label for="radio"><input name="option" class="check" type="radio">Buena</label>
+                            <label for="radio"><input name="option" class="check" type="radio">Muy buena</label>
+                            <label for="radio"><input name="option" class="check" type="radio">Excelente</label>
+                        </div>
+                        <div>
+                            <p><label for="mensaje">Cuerpo del mensaje:</label></p>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <div class="botones">
+                        <button type="reset">Resetear</button>
+                        <button type=submit>Enviar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
