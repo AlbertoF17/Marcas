@@ -345,7 +345,13 @@ textarea {
 }
 
 footer {
-    padding: 2rem 0;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #06002b;
+    color: white;
 }
 
 footer:hover {
