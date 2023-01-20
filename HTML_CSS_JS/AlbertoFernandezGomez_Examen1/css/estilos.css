@@ -20,7 +20,9 @@ h3 {
     font-size: 2em;
 }
 
-p, li, label {
+p,
+li,
+label {
     font-size: 1.25em;
 }
 
@@ -37,29 +39,29 @@ a:link {
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: purple;
 }
 
-a:hover{
-    color:yellow;
+a:hover {
+    color: yellow;
     cursor: pointer;
 }
 
-a:active{
-    color:red;
+a:active {
+    color: red;
     cursor: pointer;
 }
 
-button{
+button {
     font-size: 1.5em;
     font-weight: bold;
     background-color: black;
-    color:white;
+    color: white;
     border: 2px solid #c00000;
 }
 
-button:hover{
+button:hover {
     color: black;
     background-color: white;
     border-color: white;
@@ -72,13 +74,14 @@ button:hover{
     margin-top: 0;
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    height: 15vh;
     background-color: #170000;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     border: 1px solid #c00000;
+    z-index: +2;
 }
 
 .menu nav {
@@ -89,7 +92,7 @@ button:hover{
 }
 
 
-.logo img{
+.logo img {
     width: 5em;
     border-radius: 50%;
 }
@@ -105,8 +108,8 @@ button:hover{
     align-items: center;
 }
 
-.contenido-index{
-    margin-top: 5vw;
+.contenido-index {
+    margin-top: 7vw;
 }
 
 .contenido-index>section {
@@ -121,11 +124,11 @@ button:hover{
 
 }
 
-.contenido-index>section:nth-child(odd){
+.contenido-index>section:nth-child(odd) {
     background-color: #170000;
 }
 
-.contenido-index>section:nth-child(even){
+.contenido-index>section:nth-child(even) {
     background-color: #06002b;
 }
 
@@ -137,7 +140,7 @@ button:hover{
     border: 1px solid #c00000;
 }
 
-.contenido-index>section:hover{
+.contenido-index>section:hover {
     box-shadow: inset 0 0 10px #ffffff;
 }
 
@@ -152,7 +155,7 @@ button:hover{
     margin-bottom: 3rem;
 }
 
-.contenedor-aboutMe div{
+.contenedor-aboutMe div {
     width: 50%;
 }
 
@@ -165,11 +168,25 @@ button:hover{
 
 .home {
     height: 40vw;
-    background-image: url(../img/fondo.jpg);
+    background-image: url(../img/fondo.gif);
     background-size: cover;
+    position:relative;
+    color: white;
+    z-index:1;
 }
 
-.blog article{
+.home::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.blog article {
     padding: 1em;
     width: 70vw;
     display: flex;
@@ -178,7 +195,7 @@ button:hover{
     margin-bottom: 3em;
 }
 
-.cartas{
+.cartas {
     display: flex;
     gap: 5em;
     justify-content: center;
@@ -197,7 +214,7 @@ button:hover{
     border-radius: 1em;
 }
 
-.services{
+.services {
     padding-bottom: 3em;
 }
 
@@ -217,16 +234,15 @@ table {
     border: 0.1em solid white;
     border-collapse: collapse;
     width: 10vw;
-    margin-bottom: 8em;
 }
 
-table th{
+table th {
     border: 0.1em solid white;
     background-color: black;
     padding: 0 1em;
 }
 
-table td{
+table td {
     border: 0.1em solid white;
     padding: 0 2em;
 }
@@ -257,7 +273,7 @@ legend {
     font-size: 1.25em;
 }
 
-.contact form{
+.contact form {
     height: auto;
     width: auto;
     display: flex;
@@ -271,7 +287,7 @@ legend {
     height: 43vw;
 }
 
-.formulario>div{
+.formulario>div {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -282,11 +298,11 @@ legend {
     margin-bottom: 1rem;
 }
 
-.formulario div{
+.formulario div {
     padding: 0.75em;
 }
 
-.botones{
+.botones {
     display: flex;
     width: 50%;
     justify-content: space-around;
@@ -303,7 +319,7 @@ form button {
     text-align: center;
 }
 
-form textarea{
+form textarea {
     max-width: 30vw;
     min-height: 20vw;
     max-height: 50vh;
@@ -315,7 +331,7 @@ form textarea{
     font-size: 1em;
 }
 
-textarea{
+textarea {
     font-size: 1.5em;
     max-width: 33vw;
     min-width: 30vw;
@@ -332,7 +348,7 @@ footer {
     padding: 2rem 0;
 }
 
-footer:hover{
+footer:hover {
     color: yellow;
     cursor: pointer;
 }
