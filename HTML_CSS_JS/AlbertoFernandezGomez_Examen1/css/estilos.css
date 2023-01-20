@@ -267,7 +267,8 @@ legend {
 .formulario {
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 60vw;
+    height: 43vw;
 }
 
 .formulario>div{
@@ -303,9 +304,11 @@ form button {
 }
 
 form textarea{
-    max-width: 40vw;
+    max-width: 30vw;
     min-height: 20vw;
     max-height: 50vh;
+    margin-bottom: 8rem;
+    overflow: auto;
 }
 
 .entrada {
@@ -323,4 +326,13 @@ textarea{
 .check {
     margin-top: 0;
     vertical-align: middle;
+}
+
+footer {
+    padding: 2rem 0;
+}
+
+footer:hover{
+    color: yellow;
+    cursor: pointer;
 }
