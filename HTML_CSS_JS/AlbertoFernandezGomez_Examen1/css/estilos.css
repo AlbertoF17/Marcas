@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    display: flex;
 }
 
 h1 {
@@ -48,7 +47,7 @@ a:hover{
 }
 
 a:active{
-    color:blue;
+    color:red;
     cursor: pointer;
 }
 
@@ -69,6 +68,8 @@ button:hover{
 }
 
 .menu {
+    top: 0;
+    margin-top: 0;
     position: fixed;
     width: 100vw;
     height: 10vh;
@@ -100,7 +101,6 @@ button:hover{
     flex-direction: row;
     justify-content: space-between;
     width: 40vw;
-    height: 20vh;
     list-style: none;
     align-items: center;
 }
@@ -141,8 +141,32 @@ button:hover{
     box-shadow: inset 0 0 10px #ffffff;
 }
 
-.home p {
-    padding: 0 10em;
+.contenedor-aboutMe {
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.25rem solid red;
+    margin-bottom: 3rem;
+}
+
+.contenedor-aboutMe div{
+    width: 50%;
+}
+
+.aboutme-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.home {
+    height: 40vw;
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
 }
 
 .blog article{
@@ -173,41 +197,56 @@ button:hover{
     border-radius: 1em;
 }
 
-.services, .about{
+.services{
     padding-bottom: 3em;
 }
 
-.services>ul:nth-child(odd){
-    list-style: "🛒";
+.contenido-servicios {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
 }
 
-.services>ul>ul>li{
-    list-style: "🖥";
+.contenido-servicios p {
+    width: 80%;
 }
 
 table {
     text-align: center;
     background-color: #06002b;
-    border: 0.2em solid red;
+    border: 0.1em solid white;
     border-collapse: collapse;
-    width: 30vw;
+    width: 10vw;
     margin-bottom: 8em;
 }
 
 table th{
-    border: 0.2em solid red;
+    border: 0.1em solid white;
     background-color: black;
-    padding: 0 3em;
+    padding: 0 1em;
 }
 
 table td{
-    border: 0.2em solid red;
-    padding: 0 5em;
+    border: 0.1em solid white;
+    padding: 0 2em;
 }
 
 caption {
     font-weight: bold;
     font-size: 2.5em;
+    margin-bottom: 2rem;
+}
+
+.disponible {
+    background-color: green;
+}
+
+.ocupado {
+    background-color: red;
+}
+
+.fin-jornada {
+    background-color: gray;
 }
 
 .contact {
