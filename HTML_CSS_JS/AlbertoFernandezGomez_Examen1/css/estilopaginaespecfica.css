@@ -1,0 +1,17 @@
+.services, .portfolio, .contact, .aboutme {
+    max-width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    background-color: #170000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border: 1px solid #c00000;
+}
+
+.contact{
+    margin-top: 9rem;
+    padding: 0;
+}
