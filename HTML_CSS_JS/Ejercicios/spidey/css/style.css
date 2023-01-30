@@ -46,7 +46,7 @@ img {
 
 .contenedor:hover #spidey{
     transform: translateY(-10px);
-    transition: transform 2s;
+    transition: transform 0.6s;
 }
 
 .contenedor:active #spidey{
@@ -76,7 +76,7 @@ img {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-delay: 1.5s;
-    animation-iteration-count: infinite, infinite; /* infinite */
+    animation-iteration-count: 1; /* infinite */
     animation-fill-mode:none; /* Que sucede despues de la animacion, que estilos se quedan */
     animation-direction:normal;
 }
