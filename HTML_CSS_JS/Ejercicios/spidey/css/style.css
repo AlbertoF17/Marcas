@@ -1,0 +1,64 @@
+/* INICIAL */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ---------------------------------------------------------------------------- */
+.contenedor {
+    width: 900px;
+    height: 700px;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+}
+
+#spidey{
+    transform:translateY(-70px);
+}
+
+.contenedor:hover{
+    cursor: pointer;
+}
+
+.contenedor:active{
+    cursor: crosshair;
+}
+
+.contenedor:hover #spidey{
+    transform: translateY(-10px);
+    transition: transform 2s;
+}
+
+.contenedor:active #spidey{
+    transform: translateY(-10px); /* Si en el keyframe no ponemos 0% ni 100% este sera el valor inicial y final*/
+    animation-name: balanceo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /* infinite */
+    animation-fill-mode:none; /* Que sucede despues de la animacion, que estilos se quedan */
+    animation-direction:normal;
+}
+
+@keyframes balanceo {
+    25% {
+        transform: translateX(200px) translateY(-50px) rotate(-15deg);
+    } 50% {
+        transform: translateY(-10px);
+    } 75% {
+        transform: translateX(-200px) translateY(-50px) rotate(15deg);
+    }
+}
