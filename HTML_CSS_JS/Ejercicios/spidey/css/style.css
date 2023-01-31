@@ -12,11 +12,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 #tela{
-
+    visibility: hidden;
     position: absolute;
     top: 22rem;
     left: 0.5rem;
-    height: 0.009rem;
+    /* height: 0.009rem; */
+    height: 2rem;
     filter: invert(100);
 }
 img {
@@ -76,14 +77,21 @@ img {
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-delay: 1.5s;
-    animation-iteration-count: 1; /* infinite */
+    animation-iteration-count: infinite; /* infinite */
     animation-fill-mode:none; /* Que sucede despues de la animacion, que estilos se quedan */
     animation-direction:normal;
 }
 
 @keyframes lanzado {
-    100% {
-        transform: translateX(4px) translateY(-400px) scale(1000);
+    0%{
+        visibility: visible;
+    }
+    90% {
+        transform: translateX(400px) translateY(4px) scale(20);
+        /* scale(1000); */
+    } 100%{
+        transform: translateX(400px) translateY(4px) scale(20);
+        visibility: hidden;
     }
 }
 
