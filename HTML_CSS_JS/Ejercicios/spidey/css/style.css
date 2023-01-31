@@ -94,18 +94,3 @@ img {
         visibility: hidden;
     }
 }
-
-#tela {
-    animation-name: showEffect;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 02s;
-}
-
-@keyframes showEffect {
-    0% {display: none;
-        visibility: hidden;
-    }100% {display: block;
-        visibility: block;
-    }
-}
