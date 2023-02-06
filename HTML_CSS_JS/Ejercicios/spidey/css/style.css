@@ -1,4 +1,5 @@
-/* INICIAL */
+/*Coded by AlbertoF17*/
+
 html {
     box-sizing: border-box;
 }
@@ -11,6 +12,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 #tela{
     visibility: hidden;
     position: absolute;
@@ -19,11 +21,12 @@ body {
     height: 2rem;
     filter: invert(100);
 }
+
 img {
     max-width: 100%;
     display: block;
 }
-/* ---------------------------------------------------------------------------- */
+
 .contenedor {
     width: 900px;
     height: 700px;
@@ -53,42 +56,40 @@ img {
     transform: translateY(-10px);
     animation-name: balanceo;
     animation-duration: 2s;
-    animation-timing-function: linear; /*ease-in*/
+    animation-timing-function: cubic-bezier(.5,.09,.55,.98);
     animation-delay: 0s;
-    animation-iteration-count: infinite; 
-    animation-fill-mode: none; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
     animation-direction: normal;
 }
 
 @keyframes balanceo {
     25% {
         transform: translateX(200px) translateY(-50px) rotate(-15deg);
-    } 50% {
+    }50% {
         transform: translateY(-10px);
-    } 75% {
+    }75% {
         transform: translateX(-200px) translateY(-50px) rotate(15deg);
     }
 }
 
 .contenedor:active #tela{
-    transform: translateX(0); /* Si en el keyframe no ponemos 0% ni 100% este sera el valor inicial y final*/
+    transform: translateX(0);
     animation-name: lanzado;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(.98,.15,.37,.7);
     animation-delay: 1.5s;
-    animation-iteration-count: infinite; /* infinite */
-    animation-fill-mode:none; /* Que sucede despues de la animacion, que estilos se quedan */
+    animation-iteration-count: infinite;
+    animation-fill-mode:none;
     animation-direction:normal;
 }
 
 @keyframes lanzado {
     0%{
         visibility: visible;
-    }
-    20% {
+    }20% {
         transform: translateX(400px) translateY(4px) scale(20);
-        /* scale(1000); */
-    } 50%{
+    }50%{
         transform: translateX(400px) translateY(4px) scale(20);
         visibility: hidden;
     }
