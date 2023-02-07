@@ -1,5 +1,6 @@
-console.log("NO HACER NADA AÚN")
 /*
+console.log("NO HACER NADA AÚN")
+
 $(document).ready(function(){
     $('.dropdown-toggle').dropdown()
 });
