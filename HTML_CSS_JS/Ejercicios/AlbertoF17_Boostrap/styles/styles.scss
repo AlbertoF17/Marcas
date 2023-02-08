@@ -1,0 +1,54 @@
+//CODED BY AlbertoF17
+
+$color-fondo: rgb(39, 41, 43);
+$color-borde: rgb(250, 250, 250);
+
+body{
+    color: white;
+    background-color: black;
+    max-width: 100%;
+}
+
+.row>.col, .bd-example-row, .row>[class^="col-"]{
+    padding: 1rem;
+    background-color: $color-fondo;
+    border: 1px solid $color-borde;
+}
+
+.row.separado {
+    gap: 3rem;
+}
+
+.separator{
+    height: 2rem;
+}
+
+.row h1{
+    text-align: center;
+    padding: 0;
+}
+
+#logo{
+    width: 20rem;
+}
+
+#logo{
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+}
+
+@keyframes floating{
+    from{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }to{
+        transform: translateY(-0px);
+    }
+}
