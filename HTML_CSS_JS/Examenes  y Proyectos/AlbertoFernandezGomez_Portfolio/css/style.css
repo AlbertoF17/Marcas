@@ -250,3 +250,30 @@ svg {
     }
 }
 */
+
+.fs-0{
+    font-size: 4rem;
+}
+
+#logo-dinamico {
+    width: 15rem;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-direction: normal;
+  }
+  
+  @keyframes floating {
+    from {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    to {
+      transform: translateY(0px);
+    }
+  }
