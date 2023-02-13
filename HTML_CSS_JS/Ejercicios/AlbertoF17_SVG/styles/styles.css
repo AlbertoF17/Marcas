@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header h1 {
+  font-size: 4rem;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.subheader img {
+  width: 10rem;
+}
+
+.separador {
+  height: 7vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  width: 28rem;
+  border: 1px solid gray;
+}
+.carta h3 {
+  color: white;
+}
+
+#corazon {
+  width: 100%;
+  height: 100%;
+}
+
+#logo {
+  margin-left: 3rem;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-direction: normal;
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
