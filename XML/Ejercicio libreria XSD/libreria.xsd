@@ -1,0 +1,52 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="librería">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="código">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:minInclusive value="1000"/>
+              <xs:maxInclusive value="9999"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="dirección" type="xs:string"/>
+        <xs:element name="teléfono">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:pattern value="\d{9}"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="propietario">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="teléfono" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="libro" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="título" type="xs:string"/>
+              <xs:element name="autor" type="xs:string"/>
+              <xs:element name="formato" type="xs:string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:enumeration value="Rústica"/>
+                    <xs:enumeration value="Tapa blanda"/>
+                    <xs:enumeration value="Tapa dura"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="publicación" type="xs:integer"/>
+              <xs:element name="precio" type="xs:decimal"/>
+              <xs:element name="cantidad" type="xs:integer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
