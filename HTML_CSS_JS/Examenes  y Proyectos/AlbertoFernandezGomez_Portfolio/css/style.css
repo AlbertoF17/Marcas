@@ -251,6 +251,12 @@ svg {
 }
 */
 
+.principal{
+    background-image: url(https://miro.medium.com/max/3840/1*etDJsZIWf76sb1P_l6ZW3w.gif);
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
 .fs-0{
     font-size: 4rem;
 }
