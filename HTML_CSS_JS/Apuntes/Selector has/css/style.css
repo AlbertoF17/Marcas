@@ -1,0 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+form:has(select > option[value="java"]:checked) + .container .java,
+form:has(select > option[value="python"]:checked) + .container .python,
+form:has(select > option[value="html"]:checked) + .container .html,
+form:has(select > option[value="css"]:checked) + .container .css {
+    color: rgb(var(--bs-success-rgb));
+    animation: escala 2s;
+}
+
+@keyframes escala {
+    50% {
+        transform: scale(2);
+    }
+}

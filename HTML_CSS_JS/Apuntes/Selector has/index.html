@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Selector has">
+        <meta name="keywords" content="html, css, bootstrap">
+        <meta name="language" content="EN">
+        <meta name="author" content="joaquin.borrego@vedruna.es">
+        <meta name="robots" content="index,follow">
+        <meta name="revised" content="Monday, February 6th, 2023, 21:00pm">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+        <!-- add Roboto-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+            defer></script>
+
+        <!-- My css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+        <!-- Title -->
+        <title>Selector has</title>
+
+    </head>
+
+    <body>
+
+        <div class="container m-3">
+
+            <form>
+                <select name="modulo" id="modulo" class="form-control">
+                    <option value="all">All</option>
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+            </form>
+
+            <div class="container m-3 d-flex gap-3">
+
+                <div class="card w-25 h-25 p-3">
+                    <span class="java mx-auto">Java</span>
+                    <span class="python mx-auto">Python</span>
+                    <span class="html mx-auto">HTML</span>
+                    <span class="css mx-auto">CSS</span>
+                </div>
+                
+                <div class="card w-25 h-25 p-3">
+                    <span class="html mx-auto">HTML</span>
+                    <span class="css mx-auto">CSS</span>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </body>
+
+</html>
