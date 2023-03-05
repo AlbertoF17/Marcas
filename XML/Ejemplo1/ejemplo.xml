@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- COMENTARIO -->
-<![CDATA[otro tipo de comentario]]>
+    <!-- COMENTARIO -->
 <?xml-stylesheet type="text/css" href="estilos/estilos.css"?>
-
-<personas>
+<personas dni="12345678A"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personas.xsd">
+    <!-- CREA EL XSD AUTOMÁTICAMENTE -->
     <persona>
         <nombre>Elena</nombre>
         <sexo>Mujer</sexo>
