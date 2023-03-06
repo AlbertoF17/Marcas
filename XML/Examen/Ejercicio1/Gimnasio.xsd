@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CAMBIOS REALIZADOS AL XML: Los días y meses de las fechas siempre deben
+    tener 2 cifras (cambiados los "1" por "01" etc)-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Gimnasio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="clase" maxOccurs="unbounded" type="tipoClase">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definición tipo clase -->
+    <xs:complexType name="tipoClase">
+        <xs:all>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="precio" type="tipoPrecio"/>
+            <xs:element name="plazas" type="xs:positiveInteger"/>
+            <xs:element name="comienzo" type="tipoFecha"/>
+            <xs:element name="fin" type="tipoFecha" minOccurs="0"/>
+            <xs:element name="horario">
+                <xs:simpleType>
+                    <!-- Creamos una restriccion para Horario, para que sólo pueda ser
+                        la letra M (horario de mañana), la T (horario de tarde) o la N (horario nocturno)-->
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="M"/>
+                        <xs:enumeration value="T"/>
+                        <xs:enumeration value="N"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="profesor" type="xs:string" />
+            <xs:element name="sala" type="xs:positiveInteger"/>
+        </xs:all>
+        <xs:attribute name="id" type="tipoID" use="required"/>
+    </xs:complexType>
+
+    <!-- Definición del tipo ID -->
+    <!-- El tipo id tiene una restricción, obligando a que sea un dato con el patrón: 1 letra mayúsucla y 3 cifras numéricas -->
+    <xs:simpleType name="tipoID">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{1}[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definición tipo Fecha -->
+    <!-- El tipo fecha tiene una restricción o regla, debe ser tipo string con el siguiente formato:
+        2 dígitos dara el día, un guión, 2 dígitos para el mes, otro guión y 4 dígitos para el año, es decir
+        el formato español de las fechas-->
+    <xs:simpleType name="tipoFecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}/[0-9]{2}/[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definición tipo Precio -->
+    <!-- El tipo precio tiene la restricción de que debe ser un número superior a 0 (tipo positiveInteger),
+        para que no existan clases gratis, además de sus atributos cuota y moneda -->
+    <xs:complexType name="tipoPrecio">
+        <xs:simpleContent>
+            <xs:extension base="xs:positiveInteger">
+                <xs:attribute name="cuota" type="tipoCuota" use="required"/>
+                <xs:attribute name="moneda" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+
+    <!-- Definición tipo Cuota -->
+    <!-- El tipo cuota tiene la restricción de que debe ser una cuota en específico, es decir
+    el valor debe ser una cadena de las siguientes opciones enumeradas -->
+    <xs:simpleType name="tipoCuota">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bimensual"/>
+            <xs:enumeration value="trimestral"/>
+            <xs:enumeration value="anual"/>
+            <xs:enumeration value="semanal"/>
+            <xs:enumeration value="diaria"/>
+            <xs:enumeration value="mensual"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

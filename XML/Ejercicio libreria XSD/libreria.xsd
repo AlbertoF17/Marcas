@@ -31,7 +31,7 @@
             <xs:sequence>
               <xs:element name="título" type="xs:string"/>
               <xs:element name="autor" type="xs:string"/>
-              <xs:element name="formato" type="xs:string" minOccurs="0">
+              <xs:element name="formato" type="xs:string" minOccurs="1">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:enumeration value="Rústica"/>
