@@ -16,13 +16,6 @@
 
 </head>
 <body>
-    <h1><?php echo "Hola"?></h1>
-    <h1><?php print("Hola")?></h1>
-    <h1><?= "Hola"?></h1>
-    $nombre = "Pablo";
-    $apellido = "López";
-    $nombreCompleto = "$nombre Lopez";
-    <h1><?= $nombreCompleto ?></h1>
-    /* COPIAR LA PAGINA Q SUBA joaquin */
+    
 </body>
 </html>
