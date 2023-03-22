@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS users_crud_php;
+CREATE DATABASE users_crud_php;
+USE users_crud_php;
+
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` varchar(20) NOT NULL,
