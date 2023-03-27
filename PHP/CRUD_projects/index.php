@@ -56,7 +56,7 @@ $query = mysqli_query($con, $sql);
                     <small class="text-info"><?= implode(", ", json_decode($row['technologies'])) ?></small>
 
                     <p class="card-text"><?= $row['description'] ?></p>
-                    <a href="<?= $row['link'] ?>" class="btn btn-primary">Mas info</a><a href="updateForm/update.php?id=<?= $row['id'] ?>" class="btn btn-secondary">Editar</a><a href="CRUD/delete_project.php?project_id=<?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
+                    <a href="<?= $row['link'] ?>" class="btn btn-primary">Mas info</a><a href="CRUD/update.php?id=<?= $row['id'] ?>" class="btn btn-secondary">Editar</a><a href="CRUD/delete_project.php?project_id=<?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
                 </div>
             </div>
         <?php endwhile; ?>

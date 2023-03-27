@@ -40,12 +40,12 @@
 
 <body>
     <?php
-    include("../CRUD/connection.php");
+    include("connection.php");
     $con = connection();
 
     $id = $_GET['id'];
 
-    $sql = "SELECT * FROM projects WERE id='$id'";
+    $sql = "SELECT * FROM projects WHERE id='$id'";
     $query = mysqli_query($con, $sql);
 
     $row = mysqli_fetch_array($query);
