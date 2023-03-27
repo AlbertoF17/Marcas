@@ -7,9 +7,12 @@
 html {
     font-family: 'Segoe UI', sans-serif;
     text-align: center;
+    background-color: rgba(250, 234, 214, 0.45);
 }
 
 header{
+    background-color: rgba(250, 234, 214, 1);
+    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,6 +31,13 @@ header ul{
 a{
     text-decoration: none;
     color: black;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
 }
 
 form{
@@ -40,6 +50,10 @@ form{
     gap: 1.75rem;
     width: 20%;
     margin: 1rem auto;
+}
+
+form input[type=checkbox]{
+    margin-right: 0.4rem;
 }
 
 form input[type=checkbox]:focus{
@@ -64,7 +78,8 @@ form input[type=submit]:hover {
     color: white;
 }
 
+
 .separador{
-    height: 10vh;
+    height: 5vh;
     width: 100%;
 }
