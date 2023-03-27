@@ -49,14 +49,14 @@ $query = mysqli_query($con, $sql);
     <div class="container d-flex justify-content-center .align-items-center gap-3">
         <?php while ($row = mysqli_fetch_array($query)): ?>
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="" alt="img">
+                <img class="card-img-top" src="<?= $row['img'] ?>" alt="img">
                 <div class="card-body">
                     <h5 class="card-title"><?= $row['name'] ?></h5>
 
-                    <small class="text-info"><?= $row['technologies'] ?>Aqui iran las tecnologias. Cuidado! hay que hacerle json_decode() para tener el array de tecnologias!</small>
+                    <small class="text-info"><?= implode(", ", json_decode($row['technologies'])) ?></small>
 
                     <p class="card-text"><?= $row['description'] ?></p>
-                    <a href="<?= $row['link'] ?>" class="btn btn-primary">Mas info</a><a href="updateForm/update.php?id=" class="btn btn-secondary">Editar</a><a href="CRUD/delete_project.php?id=" class="btn btn-danger">Borrar</a>
+                    <a href="<?= $row['link'] ?>" class="btn btn-primary">Mas info</a><a href="updateForm/update.php?id=<?= $row['id'] ?>" class="btn btn-secondary">Editar</a><a href="CRUD/delete_project.php?project_id=<?= $row['id'] ?>" class="btn btn-danger">Borrar</a>
                 </div>
             </div>
         <?php endwhile; ?>
