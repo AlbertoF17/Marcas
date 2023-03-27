@@ -63,7 +63,7 @@
             </div>
             <div class="form-group">
             <label for="technologies">Technologies</label>
-            <input type="text" class="form-control" id="technologies" name="technologies" placeholder="Technologies" value='<?= str_replace('"', '"', json_encode(json_decode($row['technologies']), JSON_UNESCAPED_UNICODE)) ?>'><small class="form-text text-muted">Ejemplo: ["HTML", "CSS"]</small>
+            <input type="text" class="form-control" id="technologies" name="technologies" placeholder="Technologies" value='<?= json_encode(json_decode($row['technologies'])) ?>'><small class="form-text text-muted">Ejemplo: ["HTML", "CSS"]</small>
             </div>
             <div class="form-group">
                 <label for="img">Imagen</label>
