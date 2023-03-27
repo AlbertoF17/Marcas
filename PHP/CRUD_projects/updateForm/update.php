@@ -39,32 +39,48 @@
 </head>
 
 <body>
+    <?php
+    include("../CRUD/connection.php");
+    $con = connection();
+
+    $id = $_GET['id'];
+
+    $sql = "SELECT * FROM projects WERE id='$id'";
+    $query = mysqli_query($con, $sql);
+
+    $row = mysqli_fetch_array($query);
+    ?>
     <div class="container">
         <h1 class="text-center">Actualizar</h1>
         <form action="../CRUD/edit_project.php" method="POST">
             <div class="form-group">
-                <input type="hidden" class="form-control" name="id" value="">
+                <input type="hidden" class="form-control" name="id" value="<?= $row['id'] ?>">
             </div>
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre"
+                    value="<?= $row['name'] ?>">
             </div>
             <div class="form-group">
                 <label for="technologies">Technologies</label>
-                <input type="text" class="form-control" id="technologies" name="technologies" placeholder="Technologies" value="">
-            <small class="form-text text-muted">Ejemplo: ["HTML", "CSS"]</small>
+                <input type="text" class="form-control" id="technologies" name="technologies" placeholder="Technologies"
+                    value="<?= $row['technologies'] ?>">
+                <small class="form-text text-muted">Ejemplo: ["HTML", "CSS"]</small>
             </div>
             <div class="form-group">
                 <label for="img">Imagen</label>
-                <input type="text" class="form-control" id="img" name="img" placeholder="Imagen" value="">
+                <input type="text" class="form-control" id="img" name="img" placeholder="Imagen"
+                    value="<?= $row['img'] ?>">
             </div>
             <div class="form-group">
                 <label for="description">Description</label>
-                <input type="text" class="form-control" id="description" name="description" placeholder="Description" value="">
+                <input type="text" class="form-control" id="description" name="description" placeholder="Description"
+                    value="<?= $row['description'] ?>">
             </div>
             <div class="form-group">
                 <label for="link">Link</label>
-                <input type="text" class="form-control" id="link" name="link" placeholder="link" value="">
+                <input type="text" class="form-control" id="link" name="link" placeholder="link"
+                    value="<?= $row['link'] ?>">
             </div>
             <input type="submit" class="m-3 btn btn-primary" value="Actualizar">
         </form>
