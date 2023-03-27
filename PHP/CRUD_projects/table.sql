@@ -9,5 +9,5 @@ CREATE TABLE `portfolio_projects`.`projects` (
   `link` LONGTEXT NOT NULL,
   PRIMARY KEY (`id`));
 
-INSERT INTO PROJECTS VALUES (0, "Proyecto de prueba", '["HTML","CSS"]', "./media/img/sample.jpg", "Este es un proyecto de prueba", "https://google.es");
-INSERT INTO PROJECTS VALUES (0, "Proyecto de prueba 2", '["HTML","CSS", "JS"]', "./media/img/sample2.jpg", "Este es el segundo proyecto de prueba", "https://as.com");
+INSERT INTO PROJECTS VALUES (0, "Proyecto de prueba", '["HTML","CSS"]', "/media/img/sample.jpg", "Este es un proyecto de prueba", "https://google.es");
+INSERT INTO PROJECTS VALUES (0, "Proyecto de prueba 2", '["HTML","CSS", "JS"]', "/media/img/sample2.jpg", "Este es el segundo proyecto de prueba", "https://as.com");
