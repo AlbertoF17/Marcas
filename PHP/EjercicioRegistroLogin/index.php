@@ -10,7 +10,7 @@
     <meta name="author" content="tumail@vedruna.es">
     <meta name="robots" content="index,follow">
     <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
 
     <!-- Añado la fuente Roboto -->
