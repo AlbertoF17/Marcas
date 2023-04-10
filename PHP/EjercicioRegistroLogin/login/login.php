@@ -3,7 +3,7 @@
 
     if (isset($_POST)) {
         $email = trim($_POST["email"]);
-        $pass = $_POST["password"];
+        $pass = $_POST["pass"];
     }
 
     $sql = "SELECT * FROM users WHERE email = '$email'";
@@ -17,10 +17,11 @@
             header("Location: ../main/mainPage.php");
         } else {
             $_SESSION["error_login"] = "Login incorrecto";
-            header("Location: ../main/mainPage.php");
+            header("Location: ../index.php");
         }
     } else {
         $_SESSION["error_login"] = "Login incorrecto";
         header("Location: ../index.php");
     }
+    return $usuario;
 ?>

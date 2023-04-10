@@ -1,3 +1,7 @@
+<?php 
+    include "../connection/connection.php";
+    $usuario = $_SESSION["usuario"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,11 +46,11 @@
   <div id="subBody" class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
     <div class="container">
         <div class="card mb-3">
-            <img class="card-img-top" src="../media/img/charmander.png" alt="Card image cap">
+            <img class="card-img-top" src="../media/img/<?= $usuario["pokemon"]?>.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Nombre usuario</h5>
-              <p class="card-text">descripcion</p>
-              <p class="card-text"><small class="text-muted">Created createDate</small></p>
+              <h5 class="card-title"><?= $usuario["username"]?></h5>
+              <p class="card-text"><?= $usuario["description"]?></p>
+              <p class="card-text"><small class="text-muted">Created <?= $usuario["createDate"]?></small></p>
             </div>
           </div>
     </div>
