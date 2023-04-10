@@ -47,7 +47,7 @@
             ?>
 
             <?php if(isset($_SESSION["completado"])){
-                echo $_SESSION["completado"];
+                var_dump($_SESSION["completado"]);
             }
             ?>
 
