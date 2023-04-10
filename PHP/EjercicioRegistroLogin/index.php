@@ -40,10 +40,17 @@
 
 <body>
     <div id="subBody" class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
-        <!-- <?php include "registro/registro.php";
-            echo $_SESSION
-        ?> -->
         <div id="login" class="container">
+            <?php if(isset($_SESSION["errores"])){
+                var_dump($_SESSION["errores"]);
+            }
+            ?>
+
+            <?php if(isset($_SESSION["completado"])){
+                echo $_SESSION["completado"];
+            }
+            ?>
+
             <form action="login/login.php" method="POST" class="mt-2 mx-auto">
                 <fieldset class="form-row reset p-4 align-items-center border border-primary ">
                     <legend class="reset text-primary px-2 py-1">Login</legend>
