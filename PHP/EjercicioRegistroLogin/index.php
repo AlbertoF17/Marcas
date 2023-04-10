@@ -26,9 +26,7 @@
         defer></script>
 
     <!-- My css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!-- My scripts -->
-    <script type="text/javascript" src="js/app.js" defer></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
 
     <!-- Icono al lado del titulo -->
     <link rel="shortcut icon" href="media/icon/favicon.png" type="image/xpng">
