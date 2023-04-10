@@ -1,29 +1,26 @@
 <?php 
-    require_once("../connection/connection.php");
+    require_once "../connection/connection.php";
 
-    if ($_POST["submit"]) {
-        $mail = isset($_POST["emailLogin"]) ? mysqli_real_escape_string($connect, trim($_POST["emailLogin"])) : false;
-        $pass = isset($_POST["passwordLogin"]) ? $_POST["passwordLogin"] : false;
-    
+    if (isset($_POST)) {
+        $email = trim($_POST["email"]);
+        $pass = $_POST["password"];
     }
 
-    $sql = "SELECT * FROM socialpkmn.users WHERE email = '$mail'";
+    $sql = "SELECT * FROM users WHERE email = '$email'";
     $res = mysqli_query($connect, $sql);
 
     if ($res && mysqli_num_rows($res) == 1) {
         $usuario = mysqli_fetch_assoc($res);
 
-        if (password_verify($pass, $usuario["pass"])) {
+        if (password_verify($pass, $usuario["password"])) {
             $_SESSION["usuario"] = $usuario;
             header("Location: ../main/mainPage.php");
         } else {
-            $_SESSION["error_login"] = "Contraseña incorrecta";
-            header("Location: ../index.php");
+            $_SESSION["error_login"] = "Login incorrecto";
+            header("Location: ../main/mainPage.php");
         }
-
     } else {
-        $_SESSION["error_login"] = "No esta registrado ese mail";
+        $_SESSION["error_login"] = "Login incorrecto";
         header("Location: ../index.php");
     }
-    
 ?>
