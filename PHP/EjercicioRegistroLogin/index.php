@@ -40,6 +40,9 @@
 
 <body>
     <div id="subBody" class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+        <?php include "registro/registro.php";
+            echo $_SESSION
+        ?>
         <div id="login" class="container">
             <form action="login/login.php" method="POST" class="mt-2 mx-auto">
                 <fieldset class="form-row reset p-4 align-items-center border border-primary ">
