@@ -34,13 +34,10 @@
     <input type="submit" value="Enviar">
 </form>
 <h2 id="respuesta">
-    <?php
+<?php
     if (isset($_GET['asignaturas'])) {
         $asignaturas = $_GET['asignaturas'];
-        echo 'Has aprobado: ';
-        foreach ($asignaturas as $asignatura) {
-            echo $asignatura . ', ';
-        }
+        echo 'Has aprobado: ' . implode(', ', $asignaturas);
     }
     ?>
 </h2>
