@@ -1,6 +1,5 @@
 <?php
 include("connection.php");
-$con = connection();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
@@ -11,13 +10,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $link = $_POST['link'];
 
     $query = "UPDATE projects SET name='$name', technologies='$technologies', img='$img', description='$description', link='$link' WHERE id='$id'";
-    $result = mysqli_query($con, $query);
+    $result = mysqli_query($connection, $query);
 
     if ($result) {
         header('Location: ../index.php');
         exit;
     } else {
-        $error_message = "Error al actualizar el proyecto: " . mysqli_error($conexion);
+        $error_message = "Error al actualizar el proyecto: " . mysqli_error($connection);
     }
 }
 

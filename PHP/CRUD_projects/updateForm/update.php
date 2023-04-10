@@ -1,11 +1,10 @@
 <?php
     include("../CRUD/connection.php");
-    $con = connection();
 
     $id = $_GET['id'];
 
     $sql = "SELECT * FROM projects WHERE id='$id'";
-    $query = mysqli_query($con, $sql);
+    $query = mysqli_query($connection, $sql);
 
     $row = mysqli_fetch_array($query);
 ?>

@@ -1,15 +1,14 @@
 <?php 
     require_once("../connection/connection.php");
-    $con = connection();
 
     if ($_POST["submit"]) {
-        $mail = isset($_POST["emailLogin"]) ? mysqli_real_escape_string($con, trim($_POST["emailLogin"])) : false;
+        $mail = isset($_POST["emailLogin"]) ? mysqli_real_escape_string($connect, trim($_POST["emailLogin"])) : false;
         $pass = isset($_POST["passwordLogin"]) ? $_POST["passwordLogin"] : false;
     
     }
 
     $sql = "SELECT * FROM socialpkmn.users WHERE email = '$mail'";
-    $res = mysqli_query($con, $sql);
+    $res = mysqli_query($connect, $sql);
 
     if ($res && mysqli_num_rows($res) == 1) {
         $usuario = mysqli_fetch_assoc($res);

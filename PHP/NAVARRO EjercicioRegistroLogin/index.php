@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +12,7 @@
     <meta name="author" content="tumail@vedruna.es">
     <meta name="robots" content="index,follow">
     <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
 
     <!-- Añado la fuente Roboto -->
@@ -40,9 +42,6 @@
 
 <body>
     <div id="subBody" class="container-fluid d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
-        <!-- <?php include "registro/registro.php";
-            echo $_SESSION
-        ?> -->
         <div id="login" class="container">
             <form action="login/login.php" method="POST" class="mt-2 mx-auto">
                 <fieldset class="form-row reset p-4 align-items-center border border-primary ">
@@ -77,3 +76,4 @@
 </body>
 
 </html>
+
