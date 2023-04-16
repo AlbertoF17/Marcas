@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Ejercicio1.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio1.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio2.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio3.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio4.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio5.xsl"?> -->
+<!-- <?xml-stylesheet type="text/xsl" href="Ejercicio6.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="Ejercicio7.xsl"?>
+
 <biblioteca>
     <libros>
         <libro>
