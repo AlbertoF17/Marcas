@@ -70,7 +70,7 @@ main h1 {
     justify-content: space-around;
     align-items: flex-start;
     border: 0.25rem solid yellow;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     padding: 1rem;
     width: 20vw;
     height: 75vh;
