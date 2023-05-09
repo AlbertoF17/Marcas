@@ -23,16 +23,17 @@
       <xsl:attribute name="id">
         <xsl:value-of select="nombre/@apellido"/>
       </xsl:attribute>
+      
       <xsl:attribute name="class">
         <xsl:value-of select="concat('card ', rango)"/>
       </xsl:attribute>
       <xsl:apply-templates select="nombre"/>
       <xsl:apply-templates select="rango"/>
       <ul>
+        <li><xsl:apply-templates select="img"/></li>
         <li><xsl:apply-templates select="sableLaser"/></li>
         <li><xsl:apply-templates select="especie"/></li>
         <li><xsl:apply-templates select="fallecimiento"/></li>
-        <li><xsl:apply-templates select="img"/></li>
       </ul>
     </div>
   </xsl:template>
