@@ -1,14 +1,43 @@
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+
 html{
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+    letter-spacing: 0.1rem;
 }
 
 body{
     margin: 0;
     padding: 0;
+    color: white;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body a {
+    margin: 0;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+body a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: yellow;
+    text-decoration: underline;
 }
 
 main h1 {
+    font-family: 'Star Jedi', sans-serif;
     text-align: center;
     margin-top: 2rem;
     font-size: 4rem;
@@ -21,6 +50,7 @@ main h1 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3rem;
+    margin-bottom: 3rem;
 }
 
 .card {
@@ -28,22 +58,27 @@ main h1 {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    border: 0.25rem solid black;
+    border: 0.25rem solid white;
     border-radius: 2rem;
     padding: 1rem;
-    width: 20vw;
-    height: 60vh;
+    width: 20vw;height: 60vh;
+    box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.19),
+                1rem 1rem 1rem rgba(255, 255, 255, 0.23);
 }
 
 .card ul img {
     margin: 0;
     margin-top: 0.75rem;
+    position: relative;
+    left: 15%;
     display: flex;
+    justify-self: center;
     width: 70%;
     height: auto;
 }
 
 .card h2 {
+    font-family: 'Star Jedi', sans-serif;
     margin: 0;
     font-size: 2.5rem;
 }
