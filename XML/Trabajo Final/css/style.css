@@ -82,10 +82,9 @@ main h1 {
     margin: 0;
     margin-top: 0.75rem;
     position: relative;
-    left: 15%;
     display: flex;
     justify-self: center;
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
