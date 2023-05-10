@@ -26,7 +26,6 @@ selectQuery("//div[@id='cardContainer']/div");
 
 //2. Con un path completo (es decir, empezando desde html) obtener el texto del primer li de la card cuyo id es Kenobi
 selectQuery("//html/body/main/div[@id='cardContainer']/div[@id='Kenobi']/ul/li[1]/text()");
-//FALLA
 
 //3. El valor del id de la tercera carta
 selectQuery("//div[@id='cardContainer']/div[3]/@id");
@@ -41,15 +40,15 @@ selectQuery("//div[contains(@class, 'card') and contains(@class, 'Maestro')]");
 selectQuery("//div[@id='cardContainer']/div[@id='Windu']/h2");
 
 //7. Todas las cards que contengan la clase Maestro y el sable Verde
-selectQuery("//div[contains(@class, 'card') and contains(@class, 'Maestro') and ul/li/p[contains(., 'Verde')]]");
+selectQuery("//div[contains(@class, 'card') and contains(@class, 'Maestro') and ul/li[contains(., 'Verde')]]");
 
 //8. El texto completo de todos los elementos que contengan el texto "DBY"
 selectQuery("//text()[contains(., 'DBY')]");
 
 //9. Todas las cards de jedis que falleciesen antes de la batalla de Yavin (ABY)
-selectQuery("//div[ul/li/p[contains(., 'ABY')]]");
+selectQuery("//div[ul/li[contains(., 'ABY')]]");
 
 //10. Todas las cards que falleciesen en una estrella de la muerte y que tengan sable azul
-selectQuery("//div[ul[li/p[contains(., 'Estrella de la muerte')]] and ul[li/p[contains(., 'Azul')]]]");
+selectQuery("//div[ul[li[contains(., 'Estrella de la muerte')]] and ul[li[contains(., 'Azul')]]]");
 
 console.log("***********************************************************");
