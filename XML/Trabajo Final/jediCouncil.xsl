@@ -21,19 +21,17 @@
   <xsl:template match="consejoJedi">
     <xsl:for-each select="jedi">
       <div id="{nombre/@apellido}" class="card {rango}">
+        <img>
+          <xsl:attribute name="src">
+            <xsl:value-of select="img/@src" />
+          </xsl:attribute>
+          <xsl:attribute name="alt">
+            <xsl:value-of select="concat(nombre, '_', nombre/@apellido)"/>
+          </xsl:attribute>
+        </img>
         <h2><xsl:value-of select="nombre"/><xsl:text> </xsl:text><xsl:value-of select="nombre/@apellido"/></h2>
         <h3><xsl:value-of select="rango"/><xsl:text> Jedi</xsl:text></h3>
         <ul>
-          <li>
-            <img>
-              <xsl:attribute name="src">
-                <xsl:value-of select="img/@src" />
-              </xsl:attribute>
-              <xsl:attribute name="alt">
-                <xsl:value-of select="concat(nombre, '_', nombre/@apellido)"/>
-              </xsl:attribute>
-            </img>
-          </li>
           <li><p>Color del sable: <xsl:value-of select="sableLaser/@color" /></p></li>
           <li><p><xsl:value-of select="especie" />: <xsl:value-of select="especie/@genero" /></p></li>
           <li><p>Fallecimiento en <xsl:value-of select="concat(fallecimiento/@lugar, ' (', fallecimiento, ')')" /></p></li>
