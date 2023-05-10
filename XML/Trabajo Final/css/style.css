@@ -118,7 +118,7 @@ main h1 {
     align-self: center;
 }
 
-.card ul img {
+.card img {
     display: flex;
     justify-self: center;
     align-self: center;
@@ -139,18 +139,12 @@ main h1 {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-    .card{
-        width: 30vw;
-        height: auto;
-    }
+    
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .card{
-        width: 60vw;
-        height: auto;
-    }
+
 }
 
 /*Large devices (desktops, 992px and up)*/

@@ -25,7 +25,7 @@ function selectQuery(xpath) {
 selectQuery("//div[@id='cardContainer']/div");
 
 //2. Con un path completo (es decir, empezando desde html) obtener el texto del primer li de la card cuyo id es Kenobi
-selectQuery("//html/body/main[@id='container']/div[@id='cardContainer']/div[@id='Kenobi']/ul/li[1]/text()");
+selectQuery("//html/body/main/div[@id='cardContainer']/div[@id='Kenobi']/ul/li[1]/text()");
 //FALLA
 
 //3. El valor del id de la tercera carta
