@@ -79,14 +79,14 @@ main h1 {
   letter-spacing: 0.25rem;
   color: yellow;
   margin: 0;
-  font-size: 3.5rem;
+  font-size: 1.75rem;
   text-align: center;
   padding: 0.5rem;
 }
 
 .card h3 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 0.5rem;
 }
@@ -183,6 +183,9 @@ main h1 {
   .card img{
     width: 100%;
     height: auto;
+  }
+  .card ul li{
+    font-size: 1.25rem;
   }
 }
   
