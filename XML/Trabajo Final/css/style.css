@@ -125,10 +125,6 @@ main h1 {
   list-style: none;
 }
   
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
-  
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .card{
@@ -188,7 +184,3 @@ main h1 {
     font-size: 1.25rem;
   }
 }
-  
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-}  
