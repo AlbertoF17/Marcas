@@ -1,13 +1,4 @@
 @import url(//db.onlinewebfonts.com/c/0c724f6aa457310440cf8949c615cbd7?family=Star+Jedi);
-@font-face {
-  font-family: "Star Jedi";
-  src: url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot");
-  src: url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.svg#Star Jedi") format("svg");
-}
 
 html {
   box-sizing: border-box;
@@ -31,6 +22,7 @@ body {
 
 body a {
   font-family: 'Star Jedi', sans-serif;
+  text-transform: lowercase;
   text-align: center;
   letter-spacing: 0.5rem;
   margin: 0;
@@ -61,22 +53,21 @@ main h1 {
   margin: 0 2.25rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: normal;
   flex-wrap: wrap;
   gap: 3rem;
   margin-bottom: 3rem;
 }
 
 .card {
-  padding: 2rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 3rem;
   border: 0.25rem solid yellow;
-  width: 100%;
-  max-width: 45vw;
+  width: 60vw;
+  gap: 0.5rem;
   height: auto;
   border-radius: 1.5rem;
   box-shadow: 1rem 1rem 1rem rgba(255, 251, 30, 0.19), 1rem 1rem 1rem rgba(255, 251, 30, 0.23);
@@ -84,91 +75,117 @@ main h1 {
 
 .card h2 {
   font-family: 'Star Jedi', sans-serif;
+  text-transform: lowercase;
   letter-spacing: 0.25rem;
   color: yellow;
   margin: 0;
   font-size: 3.5rem;
   text-align: center;
+  padding: 0.5rem;
 }
 
 .card h3 {
-    margin: 0;
-    font-size: 3rem;
-    text-align: center;
-  }
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+}
   
-  .card p {
-    margin: 0;
+.card ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+  
+.card ul li {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 0.5rem;
+}
+  
+.card img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+  
+.card ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  list-style: none;
+}
+  
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+  
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card{
+    width: 35vw;
+    height: auto;
+  }
+  .card img{
+    align-self: flex-start;
+  }
+  .card h2{
     font-size: 2rem;
   }
-  
-  .card ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  .card h3{
+    font-size: 1.5rem;
   }
-  
-  .card ul li {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-  }
-  
-  .card img {
-    display: flex;
-    justify-self: center;
-    align-self: center;
+  .card img{
     width: 100%;
     height: auto;
   }
+}
   
-  .card ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
-    list-style: none;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card{
+    width: 25vw;
+    height: auto;
   }
-  
-  /* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
-    .card {
-      width: 45%;
-    }
+  .card h2{
+    font-size: 2rem;
   }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .card {
-      width: 30%;
-    }
+  .card h3{
+    font-size: 1.5rem;
   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .card {
-      width: 22%;
-    }
+  .card img{
+    width: 100%;
+    height: auto;
   }
+}
   
-  /* X-Large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .card {
-      width: 18%;
-    }
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card{
+    width: 25vw;
+    height: auto;
   }
+  .card h2{
+    font-size: 2.5rem;
+  }
+  .card h3{
+    font-size: 1.75rem;
+  }
+  .card img{
+    width: 100%;
+    height: auto;
+  }
+}
   
-  /* XX-Large devices (larger desktops, 1400px and up) */
-  @media (min-width: 1400px) {
-    .card {
-      width: 15%;
-    }
-  }  
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}  
