@@ -1,5 +1,5 @@
 form {
-    width: 200px;
+    width: 300px;
     margin: 20px auto;
 }
 
@@ -8,12 +8,29 @@ input {
     padding: 10px;
 }
 
+form{
+    display: flex;
+    gap: 0.25rem;
+}
+
+form img{
+    width: 3rem;
+    height: 3rem;
+}
+
+body {
+    background-image: url(./media/pokeball.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .poke-card {
     position: relative;
     height: fit-content;
     font-family: 'Roboto Mono', monospace;
     max-width: 300px;
-    border-radius: 4px;
+    border-radius: 2rem 0 2rem 0;
     color: #000;
     text-align: center;
     padding: 10px;
@@ -23,15 +40,15 @@ input {
 }
 
 .poke-card::before {
-    content: '';
-    background: radial-gradient(black 33%, transparent 33%);
-    background-size: 3px 3px;
-    border-radius: 4px;
+    content: "";
+    background: rgba(0,0,0, 0.75);
+    background-size: 1rem 1rem;
+    border-radius: 0 0 2rem 0;
     height: 100%;
     width: 100%;
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 1rem;
+    top: 1rem;
     z-index: -1;
 }
 
