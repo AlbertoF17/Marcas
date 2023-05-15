@@ -34,13 +34,13 @@ selectQuery("//div[@id='cardContainer']/div[3]/@id");
 selectQuery("//div[@id='cardContainer']/div[6]/h3/text()");
 
 //5. Todas las cards que contengan la clase Maestro
-selectQuery("//div[@class='card Maestro']");
+selectQuery("//div[contains(@class, 'card') and contains(@class, 'Maestro')]");
 
 //6. El elemento h2 de la card cuyo id es Windu
 selectQuery("//div[@id='cardContainer']/div[@id='Windu']/h2");
 
 //7. Todas las cards que contengan la clase Maestro y el sable Verde
-selectQuery("//div[@class='card Maestro') and ul/li[contains(., 'Verde')]]");
+selectQuery("//div[contains(@class, 'card') and contains(@class, 'Maestro') and .//ul/li[contains(., 'Verde')]]");
 
 //8. El texto completo de todos los elementos que contengan el texto "DBY"
 selectQuery("//text()[contains(., 'DBY')]");

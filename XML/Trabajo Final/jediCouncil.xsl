@@ -5,15 +5,16 @@
   <xsl:template match="/">
     <html>
       <head>
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
       </head>
       <body>
         <main id="container">
-          <h1>Consejo Jedi</h1>
+          <h1>Jedi Council</h1>
           <div id="cardContainer">
             <xsl:apply-templates />
           </div>
         </main>
+        <script type="text/javascript" src="js/app.js"></script>
       </body>
     </html>
   </xsl:template>
