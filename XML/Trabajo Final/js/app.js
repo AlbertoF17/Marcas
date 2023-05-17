@@ -22,7 +22,7 @@ function selectQuery(xpath) {
 }
 
 //1. Todos los elementos hijos de cardContainer
-selectQuery("//div[@id='cardContainer']/div");
+selectQuery("//div[@id='cardContainer']/*");
 
 //2. Con un path completo (es decir, empezando desde html) obtener el texto del primer li de la card cuyo id es Kenobi
 selectQuery("//html/body/main/div[@id='cardContainer']/div[@id='Kenobi']/ul/li[1]/text()");
