@@ -19,10 +19,11 @@ form img{
 }
 
 body {
-    background-image: url(./media/pokeball.png);
+    background-image: url(../media/pokeball.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-size: 1.5rem;
 }
 
 .poke-card {
