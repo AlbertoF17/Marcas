@@ -52,15 +52,17 @@ const renderPokemonData = data => {
 const setCardColor = types => {
     const colorOne = typeColors[types[0].type.name];
     const colorTwo = types[1] ? typeColors[types[1].type.name] : typeColors.default;
-    pokeImg.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
-    pokeImg.style.backgroundSize = ' 5px 5px';
+    pokeImg.style.background =  `radial-gradient(${colorTwo} 20%, ${colorOne} 50%)`;
+    pokeImg.style.backgroundSize = ' 15px 15px';
 }
 
 const renderPokemonTypes = types => {
     pokeTypes.innerHTML = '';
     types.forEach(type => {
         const typeTextElement = document.createElement("div");
-        typeTextElement.style.color = typeColors[type.type.name];
+        typeTextElement.style.backgroundColor = typeColors[type.type.name];
+        typeTextElement.style.fontWeight = "Bold";
+        typeTextElement.style.textTransform = "Capitalize";
         typeTextElement.textContent = type.type.name;
         pokeTypes.appendChild(typeTextElement);
     });
@@ -82,7 +84,7 @@ const renderPokemonStats = stats => {
 
 const renderNotFound = () => {
     pokeName.textContent = 'No encontrado';
-    pokeImg.setAttribute('src', 'poke-shadow.png');
+    pokeImg.setAttribute('src', './media/sadpikachu.webp');
     pokeImg.style.background =  '#fff';
     pokeTypes.innerHTML = '';
     pokeStats.innerHTML = '';
