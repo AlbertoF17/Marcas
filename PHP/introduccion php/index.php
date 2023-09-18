@@ -17,6 +17,8 @@
     <h2><?php print("Otro código PHP"); ?></h2>
     <h2><?="Atajo para imprimir código PHP"; ?></h2>
 
+    <!-- Esto es comentario HTML -->
+
     <?php
         # Comentario
 
@@ -131,6 +133,8 @@
                 echo "Acceso denegado.";
             }
         ?></h2>
+
+        <!-- Impresión de PHP dentro de la etiqueta HTML -->
 
         <!-- Otra forma:-->
         <?php if ($edad > 18): ?>
