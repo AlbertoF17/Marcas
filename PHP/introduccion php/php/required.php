@@ -1,1 +1,0 @@
-<h2>Como esto no exista peta la pagina</h2>
